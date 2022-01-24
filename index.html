@@ -26,67 +26,64 @@
                 <p>Welcome!. Reckon you can beat the computer? Hit the start button below and give it a shot. You can
                     choose easy (just Rock, Paper, Sciccors) or difficult (add Lizard, Spock)</p>
             </div>
-        </div>
-        <div id="easy" class="row center" style="display:none;">
-            <button type="button" class="btn btn-secondary col-sm" data-type="rock">Rock <i
-                    class="far fa-hand-rock"></i></button>
-            <button type="button" class="btn btn-secondary col-sm" data-type="paper">Paper <i
-                    class="far fa-hand-paper"></i></button>
-            <button type="button" class="btn btn-secondary col-sm" data-type="scissors">Scissors <i
-                    class="far fa-hand-scissors"></i></button>
-        </div>
-        <div id="difficult" class="row text-center" style="display:none;">
-            <button type="button" class="btn btn-secondary col-sm" data-type="spock">Spock <i
-                    class="far fa-hand-spock"></i></button>
-            <button type="button" class="btn btn-secondary col-sm" data-type="lizard">Lizard <i
-                    class="far fa-hand-lizard"></i></button>
-        </div>
-        <div class="row controls text-center">
-            <button id="start" type="button" class="btn btn-success col-sm">Start</button>
-            <button id="reset" type="button" class="btn btn-warning col-sm" style="display:none;">Reset</button>
-        </div>
-        <div id="controls">
-            <div class="row">
-                <h4 class="col-sm text-center">Choose Difficulty</h4>
-                <h4 class="col-sm text-center">Choose number of games</h4>
+
+            <div id="easy" class="row center" style="display:none;">
+                <button type="button" class="btn btn-secondary col-sm" data-type="rock">Rock <i
+                        class="far fa-hand-rock"></i></button>
+                <button type="button" class="btn btn-secondary col-sm" data-type="paper">Paper <i
+                        class="far fa-hand-paper"></i></button>
+                <button type="button" class="btn btn-secondary col-sm" data-type="scissors">Scissors <i
+                        class="far fa-hand-scissors"></i></button>
             </div>
-            <div class="row center">
-                <div id="difficulty" class="btn-group btn-group-toggle col-sm mx-auto" data-toggle="buttons">
-                    <label class="btn btn-secondary active">
-                        <input type="radio" name="options" id="option1" autocomplete="off" checked value="easy"> Easy
-                    </label>
-                    <label class="btn btn-secondary">
-                        <input type="radio" name="options" id="option2" autocomplete="off" value="difficult"> Difficult
-                    </label>
-                </div>
-                <div class="form-group col-sm">
+            <div id="difficult" class="row text-center" style="display:none;">
+                <button type="button" class="btn btn-secondary col-sm" data-type="spock">Spock <i
+                        class="far fa-hand-spock"></i></button>
+                <button type="button" class="btn btn-secondary col-sm" data-type="lizard">Lizard <i
+                        class="far fa-hand-lizard"></i></button>
+            </div>
+            <div class="row controls text-center">
+                <button id="start" type="button" class="btn btn-success col-sm">Start</button>
+            </div>
+            <div class="row controls text-center">
+                <button id="reset" type="button" class="btn btn-warning col-sm" style="display:none;">Reset</button>
+            </div>
 
-                    <select class="custom-select" required>
+        </div>
 
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                    </select>
-                </div>
+            <div id=" scoreboard" class="moves row text-center" style="display:none;">
+                    <div class="row text-center">
+                        <div class="col-md">
+                            <h2>User Score</h2>
+                            <h2 id="userScore">0</h2>
+                        </div>
+                        <div class="col-md">
+                            <h2>Computer Score</h2>
+                            <h2 id="computerScore">0</h2>
+                        </div>
+                    </div>
             </div>
         </div>
 
-        <div id="scoreboard" class="moves row text-center" style="display:none;">
-            
-            <i class="fas fa-user-alt col-md">Your Move</i> <i class="fas fa-desktop col-md">Computers Move</i>
+        <div id="startControls">
 
-            <div class="row text-center" style="display:none;">
-                <div class="col-sm">
-                    <h2>User Score</h2>
-                    <h2 id="userScore">0</h2>
-                </div>
-                <div class="col-sm">
-                    <h2>Computer Score</h2>
-                    <h2 id="computerScore">0</h2>
-                </div>
-            </div>
+            <label for="difficulty">Easy or Hard</label>
+
+            <select name="difficulty" id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="hard">Hard</option>
+            </select>
+            <label for="numberGames">Number of Games</label>
+
+            <select name="numberGames" id="numberGames">
+                <option value=5>5</option>
+                <option value=6>6</option>
+                <option value=7>7</option>
+                <option value=8>8</option>
+                <option value=9>9</option>
+                <option value=10>10</option>
+            </select>
         </div>
+        >
 
         <script src="assets/js/script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>

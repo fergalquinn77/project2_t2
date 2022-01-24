@@ -23,7 +23,7 @@ function startGame(){
         document.getElementById("difficult").style.display = "flex";
     }
     document.getElementById("start").style.display = "none";
-    document.getElementById("controls").style.display = "none";
+    document.getElementById("startControls").style.display = "none";
     document.getElementById("reset").style.display = "flex";
     document.getElementById("scoreboard").style.display = "flex";
     /* document.getElementByClassName("scoreboard").style.display = "flex";
