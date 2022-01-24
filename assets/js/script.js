@@ -127,10 +127,13 @@ function incrementScore(gameResult) {
 function checkScore(userScore,compScore){
 let finish=document.getElementById("numberGames").value;
 if (userScore==finish || compScore==finish){
-    endgame()
+    endGame()
 }
 }
 
-function endGame(){}
+function endGame(){
+    document.getElementById('finish').innerText="Game is now over";
+    console.log("finished")
+}
 
 function draw(){}
