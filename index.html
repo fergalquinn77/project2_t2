@@ -27,7 +27,7 @@
                     choose easy (just Rock, Paper, Sciccors) or difficult (add Lizard, Spock)</p>
             </div>
         </div>
-        <div id="easy" class="row center" style="display:none;" >
+        <div id="easy" class="row center" style="display:none;">
             <button type="button" class="btn btn-secondary col-sm" data-type="rock">Rock <i
                     class="far fa-hand-rock"></i></button>
             <button type="button" class="btn btn-secondary col-sm" data-type="paper">Paper <i
@@ -45,42 +45,46 @@
             <button id="start" type="button" class="btn btn-success col-sm">Start</button>
             <button id="reset" type="button" class="btn btn-warning col-sm" style="display:none;">Reset</button>
         </div>
-        <div class="row">
-            <h4 class="col-sm text-center">Choose Difficulty</h4>
-            <h4 class="col-sm text-center">Choose number of games</h4>
-        </div>
-        <div class="controls row center">
-            <div id="difficulty" class="btn-group btn-group-toggle col-sm mx-auto" data-toggle="buttons">
-                <label class="btn btn-secondary active">
-                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Easy
-                </label>
-                <label class="btn btn-secondary">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> Difficult
-                </label>
+        <div id="controls">
+            <div class="row">
+                <h4 class="col-sm text-center">Choose Difficulty</h4>
+                <h4 class="col-sm text-center">Choose number of games</h4>
             </div>
-            <div class="form-group col-sm">
+            <div class="row center">
+                <div id="difficulty" class="btn-group btn-group-toggle col-sm mx-auto" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                        <input type="radio" name="options" id="option1" autocomplete="off" checked value="easy"> Easy
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="option2" autocomplete="off" value="difficult"> Difficult
+                    </label>
+                </div>
+                <div class="form-group col-sm">
 
-                <select class="custom-select" required>
+                    <select class="custom-select" required>
 
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                </select>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </div>
             </div>
         </div>
 
-        <div class="moves row text-center" style="display:none;">
+        <div id="scoreboard" class="moves row text-center" style="display:none;">
+            
             <i class="fas fa-user-alt col-md">Your Move</i> <i class="fas fa-desktop col-md">Computers Move</i>
-        </div>
-        <div class="scoreboard row text-center" style="display:none;">
-            <div class="col-sm">
-                <h2>User Score</h2>
-                <h2 id="userScore">0</h2>
-            </div>
-            <div class="col-sm">
-                <h2>Computer Score</h2>
-                <h2 id="computerScore">0</h2>
+
+            <div class="row text-center" style="display:none;">
+                <div class="col-sm">
+                    <h2>User Score</h2>
+                    <h2 id="userScore">0</h2>
+                </div>
+                <div class="col-sm">
+                    <h2>Computer Score</h2>
+                    <h2 id="computerScore">0</h2>
+                </div>
             </div>
         </div>
 
