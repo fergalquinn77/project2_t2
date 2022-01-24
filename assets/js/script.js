@@ -119,7 +119,12 @@ function incrementScore(gameResult) {
     checkScore(userNewScore, compNewScore);
 }
 
-function checkScore(){}
+function checkScore(userScore,compScore){
+let finish=document.getElementById("numberGames").value;
+if (userScore==finish || compScore==finish){
+    endgame()
+}
+}
 
 function endGame(){}
 
