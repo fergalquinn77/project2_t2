@@ -12,7 +12,74 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("reset").onclick = gameReset;
 });
 
-function runGame(){}
+function runGame(gameType) {
+
+    const moves = ["rock", "paper", "scissors", "spock", "lizard"];
+    let computerMove = moves[Math.floor(Math.random() * moves.length)];
+    console.log(gameType);
+    console.log(computerMove);
+    if (gameType == "rock") {
+        win = ["scissors", "lizard"];
+        lose = ["spock", "paper"];
+        if (win.includes(computerMove)) {
+            incrementScore("user");
+        } else if (lose.includes(computerMove)) {
+            incrementScore("computer");
+        } else {
+            draw();
+        }
+        updateImage(gameType, computerMove);
+    }
+    if (gameType == "scissors") {
+        win = ["paper", "lizard"];
+        lose = ["spock", "rock"];
+        if (win.includes(computerMove)) {
+            incrementScore("user");
+        } else if (lose.includes(computerMove)) {
+            incrementScore("computer");
+        } else {
+            incrementScore("draw");
+        }
+        updateImage(gameType, computerMove);
+    }
+    if (gameType == "lizard") {
+        win = ["paper", "spock"];
+        lose = ["scissors", "rock"];
+        if (win.includes(computerMove)) {
+            incrementScore("user");
+        } else if (lose.includes(computerMove)) {
+            incrementScore("computer");
+        } else {
+            draw();
+        }
+        updateImage(gameType, computerMove);
+    }
+    if (gameType == "paper") {
+        win = ["rock", "spock"];
+        lose = ["scissors", "lizard"];
+        if (win.includes(computerMove)) {
+            incrementScore("user");
+        } else if (lose.includes(computerMove)) {
+            incrementScore("computer");
+        } else {
+            draw();
+        }
+        updateImage(gameType, computerMove);
+    }
+    if (gameType == "spock") {
+        win = ["scissors", "rock"];
+        lose = ["lizard", "paper"];
+        if (win.includes(computerMove)) {
+            incrementScore("user");
+        } else if (lose.includes(computerMove)) {
+            incrementScore("computer");
+        } else {
+            draw();
+        }
+        updateImage(gameType, computerMove);
+    }
+
+}
 
 function startGame(){
     console.log("Start");
@@ -26,8 +93,6 @@ function startGame(){
     document.getElementById("startControls").style.display = "none";
     document.getElementById("reset").style.display = "flex";
     document.getElementById("scoreboard").style.display = "flex";
-    /* document.getElementByClassName("scoreboard").style.display = "flex";
-    document.getElementsByClassName("controls").style.display = "none"; */
 }
 
 function updateMessage(){}
