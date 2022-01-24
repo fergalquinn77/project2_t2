@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    let buttons = document.getElementsByTagName("btn");
+    let buttons = document.getElementsByClassName("btn-play");
 
     for (let button of buttons) {
         button.addEventListener("click", function () {
@@ -16,8 +16,7 @@ function runGame(gameType) {
 
     const moves = ["rock", "paper", "scissors", "spock", "lizard"];
     let computerMove = moves[Math.floor(Math.random() * moves.length)];
-    console.log(gameType);
-    console.log(computerMove);
+
     if (gameType == "rock") {
         win = ["scissors", "lizard"];
         lose = ["spock", "paper"];
@@ -28,7 +27,7 @@ function runGame(gameType) {
         } else {
             draw();
         }
-        updateImage(gameType, computerMove);
+        updateMessage(gameType,computerMove);
     }
     if (gameType == "scissors") {
         win = ["paper", "lizard"];
@@ -40,7 +39,7 @@ function runGame(gameType) {
         } else {
             incrementScore("draw");
         }
-        updateImage(gameType, computerMove);
+        updateMessage(gameType,computerMove);
     }
     if (gameType == "lizard") {
         win = ["paper", "spock"];
@@ -52,7 +51,7 @@ function runGame(gameType) {
         } else {
             draw();
         }
-        updateImage(gameType, computerMove);
+    updateMessage(gameType,computerMove);
     }
     if (gameType == "paper") {
         win = ["rock", "spock"];
@@ -64,7 +63,7 @@ function runGame(gameType) {
         } else {
             draw();
         }
-        updateImage(gameType, computerMove);
+        updateMessage(gameType,computerMove);
     }
     if (gameType == "spock") {
         win = ["scissors", "rock"];
@@ -76,7 +75,7 @@ function runGame(gameType) {
         } else {
             draw();
         }
-        updateImage(gameType, computerMove);
+        updateMessage(gameType,computerMove);
     }
 
 }
@@ -95,12 +94,33 @@ function startGame(){
     document.getElementById("scoreboard").style.display = "flex";
 }
 
-function updateMessage(){}
+function updateMessage(user,comp){
+document.getElementById("message-area").innerText = `You choose ${user} and the computer played ${comp}. The game result is `;
+
+}
 
 function gameReset(){}
 
-function incrementScore(){}
+function incrementScore(gameResult) {
+    console.log(gameResult);
+    if (gameResult === "user") {
+        let userOldScore = parseInt(document.getElementById('userScore').innerText);
+        document.getElementById('userScore').innerText = ++userOldScore;
+        console.log("win");
+    } else if (gameResult === "computer") {
+        let compOldScore = parseInt(document.getElementById('computerScore').innerText);
+        document.getElementById('computerScore').innerText = ++compOldScore;
+        console.log("loose");
+    } else {
+
+    }
+    let userNewScore = document.getElementById('userScore').innerText;
+    let compNewScore = document.getElementById('computerScore').innerText;
+    checkScore(userNewScore, compNewScore);
+}
 
 function checkScore(){}
 
 function endGame(){}
+
+function draw(){}
