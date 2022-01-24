@@ -27,7 +27,7 @@ function runGame(gameType) {
         } else {
             draw();
         }
-        updateMessage(gameType,computerMove);
+        updateUserMoves(gameType,computerMove);
     }
     if (gameType == "scissors") {
         win = ["paper", "lizard"];
@@ -39,7 +39,7 @@ function runGame(gameType) {
         } else {
             incrementScore("draw");
         }
-        updateMessage(gameType,computerMove);
+        updateUserMoves(gameType,computerMove);
     }
     if (gameType == "lizard") {
         win = ["paper", "spock"];
@@ -51,7 +51,7 @@ function runGame(gameType) {
         } else {
             draw();
         }
-    updateMessage(gameType,computerMove);
+    updateUserMoves(gameType,computerMove);
     }
     if (gameType == "paper") {
         win = ["rock", "spock"];
@@ -63,7 +63,7 @@ function runGame(gameType) {
         } else {
             draw();
         }
-        updateMessage(gameType,computerMove);
+        updateUserMoves(gameType,computerMove);
     }
     if (gameType == "spock") {
         win = ["scissors", "rock"];
@@ -75,7 +75,7 @@ function runGame(gameType) {
         } else {
             draw();
         }
-        updateMessage(gameType,computerMove);
+        updateUserMoves(gameType,computerMove);
     }
 
 }
@@ -94,12 +94,17 @@ function startGame(){
     document.getElementById("scoreboard").style.display = "flex";
 }
 
-function updateMessage(user,comp){
-document.getElementById("message-area").innerText = `You choose ${user} and the computer played ${comp}. The game result is `;
+function updateUserMoves(user,comp){
+document.getElementById("userLastMove").innerText = user;
+document.getElementById("computerLastMove").innerText = comp;
 
 }
 
-function gameReset(){}
+function gameReset(){
+    startGame();
+    document.getElementById('computerScore').innerText = 0;
+    document.getElementById('userScore').innerText = 0;
+}
 
 function incrementScore(gameResult) {
     console.log(gameResult);

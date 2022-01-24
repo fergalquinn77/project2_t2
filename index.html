@@ -50,16 +50,29 @@
     </div>
 
     <div id="scoreboard" class="moves row text-center" style="display:none;">
-        <div class="row text-center">
-            <div class="col-md">
-                <h4>User Score</h4>
-                <h4 id="userScore">0</h4>
-            </div>
-            <div class="col-md">
-                <h4>Computer Score</h4>
-                <h4 id="computerScore">0</h4>
-            </div>
-        </div>
+        
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Score</th>
+                <th scope="col">Last Move</th>
+                <th scope="col">Last Result</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">You</th>
+                <td id="userLastMove"></td>
+                <td id="userScore">0</td>
+              </tr>
+              <tr>
+                <th scope="row">Computer</th>
+                <td id="computerLastMove"></td>
+                <td id="computerScore">0</td>
+              </tr>
+            </tbody>
+          </table>
+        
     </div>
 
     <div id="startControls">
