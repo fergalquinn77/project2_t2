@@ -31,8 +31,9 @@ function runGame(gameType) {
             incrementScore("user");
         } else if (lose.includes(computerMove)) {
             incrementScore("computer");
-        } else {
-            draw();
+        }
+        else {
+            incrementScore("draw");
         }
         updateUserMoves(gameType,computerMove);
     }
@@ -56,7 +57,7 @@ function runGame(gameType) {
         } else if (lose.includes(computerMove)) {
             incrementScore("computer");
         } else {
-            draw();
+            incrementScore("draw");
         }
     updateUserMoves(gameType,computerMove);
     }
@@ -68,7 +69,7 @@ function runGame(gameType) {
         } else if (lose.includes(computerMove)) {
             incrementScore("computer");
         } else {
-            draw();
+            incrementScore("draw");
         }
         updateUserMoves(gameType,computerMove);
     }
@@ -80,7 +81,7 @@ function runGame(gameType) {
         } else if (lose.includes(computerMove)) {
             incrementScore("computer");
         } else {
-            draw();
+            incrementScore("draw");
         }
         updateUserMoves(gameType,computerMove);
     }
@@ -99,6 +100,7 @@ function startGame(){
     document.getElementById("startControls").style.display = "none";
     document.getElementById("reset").style.display = "flex";
     document.getElementById("scoreboard").style.display = "flex";
+    document.getElementById("intro-message").style.display = "none";
 }
 
 function updateUserMoves(user,comp){
@@ -115,15 +117,12 @@ function gameReset(){
 }
 
 function incrementScore(gameResult) {
-    console.log(gameResult);
     if (gameResult === "user") {
         let userOldScore = parseInt(document.getElementById('userScore').innerText);
         document.getElementById('userScore').innerText = ++userOldScore;
-        console.log("win");
     } else if (gameResult === "computer") {
         let compOldScore = parseInt(document.getElementById('computerScore').innerText);
         document.getElementById('computerScore').innerText = ++compOldScore;
-        console.log("loose");
     } else {
 
     }
@@ -148,6 +147,7 @@ function endGame(userScore,compScore){
 else {
     document.getElementById('finish').innerText="Game is now over. I'm afraid you did not win.";
 }
+document.getElementById("easy").style.display = "none";
+document.getElementById("difficult").style.display = "none";
 }
 
-function draw(){}
