@@ -1,9 +1,14 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: none;
-  }
-  
-  body {
-    background-color: red;
-  }
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+#logo {
+  height: 200px;
+  margin: 0 auto;
+}
+
+.btn {
+  margin: 5px;
+}
