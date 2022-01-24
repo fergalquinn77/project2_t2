@@ -14,7 +14,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function runGame(gameType) {
 
-    const moves = ["rock", "paper", "scissors", "spock", "lizard"];
+
+    if (document.getElementById("difficulty").value=="easy"){
+        var moves = ["rock", "paper", "scissors"];
+    }
+    else {
+        var moves = ["rock", "paper", "scissors", "spock", "lizard"];
+    }
+
     let computerMove = moves[Math.floor(Math.random() * moves.length)];
 
     if (gameType == "rock") {
@@ -104,6 +111,7 @@ function gameReset(){
     startGame();
     document.getElementById('computerScore').innerText = 0;
     document.getElementById('userScore').innerText = 0;
+    document.getElementById('finish').innerText="";
 }
 
 function incrementScore(gameResult) {
@@ -127,13 +135,19 @@ function incrementScore(gameResult) {
 function checkScore(userScore,compScore){
 let finish=document.getElementById("numberGames").value;
 if (userScore==finish || compScore==finish){
-    endGame()
+    endGame(userScore,compScore)
 }
 }
 
-function endGame(){
-    document.getElementById('finish').innerText="Game is now over";
-    console.log("finished")
+function endGame(userScore,compScore){
+    
+    let finish=document.getElementById("numberGames").value;
+    if (finish==userScore){
+    document.getElementById('finish').innerText="Game is now over. You are the winner";
+}
+else {
+    document.getElementById('finish').innerText="Game is now over. I'm afraid you did not win.";
+}
 }
 
 function draw(){}
