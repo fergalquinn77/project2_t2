@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function runGame(gameType) {
 
-
     if (document.getElementById("difficulty").value == "easy") {
         var moves = ["rock", "paper", "scissors"];
     } else {
