@@ -1,3 +1,4 @@
+let win, lose, gameType;
 document.addEventListener("DOMContentLoaded", function () {
 
     let buttons = document.getElementsByClassName("btn-play");
@@ -6,20 +7,23 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function () {
             gameType = this.getAttribute("data-type");
             runGame(gameType);
-        })
+        });
     }
     document.getElementById("start").onclick = startGame;
     document.getElementById("reset").onclick = gameReset;
 });
 
 /* Add event listeners for all buttons */
+const easy_moves = ["rock", "paper", "scissors"];
+const diff_moves = ["rock", "paper", "scissors", "spock", "lizard"];
 
 function runGame(gameType) {
 
+    let moves;
     if (document.getElementById("difficulty").value == "easy") {
-        var moves = ["rock", "paper", "scissors"];
+        moves = easy_moves;
     } else {
-        var moves = ["rock", "paper", "scissors", "spock", "lizard"];
+        moves = diff_moves;
     }
     
     /* Adjust for difficulty */
@@ -145,7 +149,7 @@ function incrementScore(gameResult) {
 function checkScore(userScore, compScore) {
     let finish = document.getElementById("numberGames").value;
     if (userScore == finish || compScore == finish) {
-        endGame(userScore, compScore)
+        endGame(userScore, compScore);
     }
 }
 
