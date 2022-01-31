@@ -39,6 +39,8 @@
   background-color: yellow;
 }
 
+/* Make the YouTube video on home page mobile responsive */
+
 .video-container { position: relative; 
   padding-bottom: 56.25%; 
   padding-top: 30px; 
