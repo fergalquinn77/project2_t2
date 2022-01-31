@@ -18,22 +18,31 @@
         <img id="logo" src="assets/images/logo.png" alt="Logo image">
     </div>
     <h1 class="text-center">Rock, Paper, Sciccors, Lizard, Spock</h1>
+    <div id="intro-message" class="text-center">
+        <div class="col-lg"></div>
+        <p>Welcome! Reckon you can beat the computer? Hit the start button below and give it a shot.
+            You can choose easy, which is the standard form of rock, paper, scissors or you can choose difficult,
+            which includes two further options - namely Lizard and Spock. <br><br>Scissors cuts paper, paper covers
+            rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard,
+            lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors.
+            <br><br>
+        </p>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/x5Q6-wMx-K8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <p><br>Please choose the <strong>difficulty</strong> and <strong>number of games</strong> in the game
+            settings area below.</p>
+    </div>
     <div id="game-area">
+
         <div class="container">
 
-            <div id="intro-message" class="row text-center">
-                <div class="col-lg"></div>
-                <p>Welcome! Reckon you can beat the computer? Hit the start button below and give it a shot. 
-                    You can choose easy, which is the standard form of rock, paper, scissors or you can choose difficult, 
-                    which includes two further options - namely Lizard and Spock. <br><br>Scissors cuts paper, paper covers 
-                    rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, 
-                    lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors.
-                     <br><br>
-                     <iframe width="560" height="315" src="https://www.youtube.com/embed/x5Q6-wMx-K8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                     <br>Please choose the <strong>difficulty</strong> and <strong>number of games</strong> in the game settings area below.</p>
-            </div>
 
-            <!-- This intro-message shows on initial load. It clears after game has started --> 
+
+            <!-- This intro-message shows on initial load. It clears after game has started -->
 
             <div id="easy" class="row center" style="display:none;">
                 <button type="button" class="btn btn-secondary col-sm btn-play" data-type="rock">Rock <i
@@ -43,7 +52,7 @@
                 <button type="button" class="btn btn-secondary col-sm btn-play" data-type="scissors">Scissors <i
                         class="far fa-hand-scissors"></i></button>
             </div>
-            
+
             <!-- These are the buttons which are used for the easy version of the game. -->
 
             <div id="difficult" class="row text-center" style="display:none;">
@@ -54,7 +63,7 @@
             </div>
 
             <!-- Additional buttons for the difficult version of game. -->
-            
+
             <div class="row controls text-center">
                 <button id="reset" type="button" class="btn btn-warning col-sm" style="display:none;">Reset</button>
             </div>
@@ -63,36 +72,36 @@
     </div>
 
     <div id="scoreboard" class="moves row text-center" style="display:none;">
-        
+
         <table class="table">
             <thead>
-              <tr>
-                <th scope="col">Score</th>
-                <th scope="col">Last Move</th>
-                <th scope="col">Last Result</th>
-              </tr>
+                <tr>
+                    <th scope="col">Score</th>
+                    <th scope="col">Last Move</th>
+                    <th scope="col">Last Result</th>
+                </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row">You</th>
-                <td id="userLastMove"></td>
-                <td id="userScore">0</td>
-              </tr>
-              <tr>
-                <th scope="row">Computer</th>
-                <td id="computerLastMove"></td>
-                <td id="computerScore">0</td>
-              </tr>
+                <tr>
+                    <th scope="row">You</th>
+                    <td id="userLastMove"></td>
+                    <td id="userScore">0</td>
+                </tr>
+                <tr>
+                    <th scope="row">Computer</th>
+                    <td id="computerLastMove"></td>
+                    <td id="computerScore">0</td>
+                </tr>
             </tbody>
-          </table>
+        </table>
 
-          <!-- Scoreboard that become active after game starts -->
+        <!-- Scoreboard that become active after game starts -->
 
-    <div id="finish-text">
-        <p id="finish" class="bg-danger"></p>
-    </div>     
-        
-    <!-- Game over text that displays once the game is over. -->
+        <div id="finish-text">
+            <p id="finish" class="bg-danger"></p>
+        </div>
+
+        <!-- Game over text that displays once the game is over. -->
 
     </div>
 
@@ -114,11 +123,11 @@
             <option value=9>9</option>
             <option value=10>10</option>
         </select>
-     
-            <button id="start" type="button" class="btn btn-success">Start</button>
-     
+
+        <button id="start" type="button" class="btn btn-success">Start</button>
+
     </div>
-    
+
     <!-- Game controls - input easy/difficult and number of games. -->
 
     <script src="assets/js/script.js"></script>
