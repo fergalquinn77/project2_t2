@@ -13,8 +13,8 @@
   margin: 5px;
 }
 
-.reset{
-  max-width: 200px;
+#reset{
+  text-align: center;
 }
 
 #startControls{
@@ -29,6 +29,7 @@
   border: 5px solid green;
   padding: 40px;
   margin: 0px auto;
+  justify-content: center;
 }
 
 #difficulty{
