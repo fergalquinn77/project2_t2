@@ -1,108 +1,106 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock, Paper, Scissors
 
-Welcome fergalquinn77,
+This website is deisgned to allow users play the traditional Rock, Paper, Scissors game against a computer. Users will have the option to play the traditional game with 3 choices or extend the game to the more difficult 5 choice game which has two further options of Lizard and Spock.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![mobile responsive design](assets/images/responsive-design.jpg)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Features
 
-## Gitpod Reminders
+- Game settings
+    - On the homepage, there is a [game settings section](assets/images/game-settings.jpg) which allows use to choose Easy or Hard and the number of games they wish to play. 
+- Playing the game
+    - When the user is playing the standard game, the user is given 3 options to play each move - namely, [Rock, Paper or Scissors](assets/images/game-play.jpg). If they choose the difficult version, they are given two further options - namely, [Lizard and Spock](assets/images/game-play-difficult.jpg).
+    - When the user makes a move, the computer then makes a random move. Both moves are recorded in the [scoreboard section](assets/images/scoreboard.jpg).
+- The scoreboard
+    - There is a scoreboard that records the score of the game. The game finishes when the 
+    The navigation is clear and simple. It displays the logo for Kennedys on the left and the 3 sections to the right (or under the logo in mobile view). 
+    - [Click here for the wireframe](assets/images/wireframe.jpg)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+![navigation bar](assets/images/header.jpg)
 
-`python3 -m http.server`
+- The Header
 
-A blue button should appear to click: _Make Public_,
+    - The header shows a photo of team at Kennedys with the slogan 'this is Rugby Country'. The pub has strong Rugby roots and is named after TJ Kennedy who played for Ireland in the 1970's.
+    - The section provides a clear picture that this is a rugby pub.
 
-Another blue button should appear to click: _Open Browser_.
+![navigation bar](assets/images/rugby-country-hero-image.jpg)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- The Bookings Section
 
-A blue button should appear to click: _Make Public_,
+    - The booking section embed's the Resdiary booking portal. This gives the user instant access to reserving a table at Kennedys
+    - Some of the features of the bar are highlighted on either side of the booking interface in desktop view. This is not displayed in mobile view.
 
-Another blue button should appear to click: _Open Browser_.
+![Booking Portal](assets/images/booking-portal.jpg)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- The Contact-Us Section
 
-To log into the Heroku toolbelt CLI:
+    - The contact section allows users to send a message to the bar and captures the necessary information like name, email and message.
+    - It provides a quick and easy way of the user making contact
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+   ![Contact-Us Page](assets/images/contact-us.jpg) 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+   - The Gallery Page
 
-------
+        - This provides the user with a selection of photos from Kennedys Bar. The images display a strong Rugby and live music theme.
 
-## Release History
+   ![Gallery Images](assets/images/gallery.jpg)   
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Technologies Used
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+Languages used:
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- HTML
+- CSS
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## Planned Further Development
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- I would like to use Javascript to make the navigation menu more responsive, particularily for mobile devices.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Testing
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+- I tested that the page works in the different browsers: [Chrome](assets/images/chrome-testing.jpg), Safari (via [BrowserStack](http://www.browserstack.com)), [Firefox](assets/images/firefox-testing.jpg).
+- I confirmed that this project is [responsive](assets/images/responsive-home.jpg), looks good and functions on all standard screen sizes using devtools device toolbar.
+- I confirmed that the navigation, header, & contact-us text are all readable and easy to understand.
+- I have confirmed that the form works. It requires entries at every field and it will only accept an email in the email field. The submit button works.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## Validator Testing
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- HTML
+    - No errors were found when passing through the official [W3C validator](https://validator.w3.org/#validate_by_input). Here are the results of each page - [Homepage](assets/images/index-html-check.jpg), [Contact-Us](assets/images/contact-us-html-check.jpg), [Gallery](assets/images/gallery-html-check.jpg). There is a warning relating to Javasc
+- CSS
+    - No errors were found when passing through the offical [Jigsaw validator](https://jigsaw.w3.org/css-validator/validator). [Click here](assets/images/css-check.jpg) for results.
+- Accessibility
+    - Confirmed that font choice was easy to read and accessible by running it through lighthouse in devtools. Note the best practices performance was effected by the inclusion of Javascript (for booking portal), which is outside of my control.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+ ![Lighthouse Report](assets/images/lighthouse-report.jpg)   
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+ ## Deployment
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+ ### Forking Instructions
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+ To fork this repo - go to the [Github page](https://github.com/fergalquinn77/project1) and click the fork button on the top right.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+ ### Local deployment (Gitpod)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+ The project was edited on [Gitpod](https://crimson-gibbon-dduyw9gq.ws-eu25.gitpod.io/). Edits were then regularily pushed to Github.
+   
+ ### GitHub Pages
 
-------
+ The project was deployed on GitHub Pages using the following steps:
 
-## FAQ about the uptime script
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/fergalquinn77/project1.git)
+2. At the top of the Repository - click  "Settings" Button on the menu.
+3. Under "Source", click the dropdown called "None" and select "Main Branch".
+The page will automatically refresh.
+Scroll back down through the page to locate the now [published site link](https://fergalquinn77.github.io/project1/) in the "GitHub Pages" section.
 
-**Why have you added this script?**
+## Credits
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Content & Media
 
-**How will this affect me?**
+- All content was written by the developer. 
+- Images for the Gallery section were taken by James Connelly Photography, Sligo
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Acknowledgements
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+- My mentor Chris Quinn was a great help throughout the project!. 
