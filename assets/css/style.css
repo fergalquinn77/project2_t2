@@ -4,21 +4,38 @@
   border: none;
 }
 
+body{
+  background-color: lightgray;
+}
+
 #logo {
   height: 200px;
   margin: 0 auto;
 }
 
+.flex-container{
+  display: flex;
+  }
 
+  .flex-container ul{
+    list-style-type: none;
+  }
 
 #intro{
-  width: 80vw;
-  border: 10px solid #bd1515;
-  padding: 50px;
-  margin: 20px;
+  background-color: #bd1515;
+  color:white;
+  font-size:1.25em;
   }
 
 
+#intro-message .btn{
+  display: inline-block;
+  margin: 10px;
+}
+
+#video{
+  background-color: white;
+}
 .btn {
   margin: 5px;
 }

@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     document.getElementById("start").onclick = startGame;
     document.getElementById("reset").onclick = gameReset;
+    document.getElementById("easy-inst").onclick = easyInst;
+    document.getElementById("diff-inst").onclick = diffInst;
+
 });
 
 /* Add event listeners for all buttons */
@@ -169,3 +172,12 @@ function endGame(userScore, compScore) {
 
 /* Find out who is the winner and update the scoreboard to indicate who it is. 
 Take away playing keys so the user cannot continue to play */
+
+
+function easyInst() {
+    document.getElementById('instructions').innerText = "Rock crushes scissors, Paper covers rock and Scissors cuts paper";
+}
+
+function diffInst() {
+    document.getElementById('instructions').innerText = "Rock crushes scissors, Paper covers rock, Scissors cuts paper, Rock crushes lizard, Lizard poisons spock, Spock smashes scissors, Scissors decapitates lizard, Lizard eats paper, Paper disproves Spock, Spock vaporizes rock";
+}
