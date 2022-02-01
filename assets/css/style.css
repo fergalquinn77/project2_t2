@@ -9,10 +9,15 @@
   margin: 0 auto;
 }
 
-header{
-  height: 300px;
+
+
+#intro{
+  width: 80vw;
+  border: 10px solid #bd1515;
+  padding: 50px;
+  margin: 20px;
   }
-}
+
 
 .btn {
   margin: 5px;
