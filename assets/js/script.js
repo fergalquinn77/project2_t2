@@ -25,9 +25,9 @@ function runGame(gameType) {
     } else {
         moves = diff_moves;
     }
-    
+
     /* Adjust for difficulty */
-    
+
     let computerMove = moves[Math.floor(Math.random() * moves.length)];
 
     if (gameType == "rock") {
