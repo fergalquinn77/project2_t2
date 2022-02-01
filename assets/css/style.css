@@ -9,6 +9,11 @@
   margin: 0 auto;
 }
 
+header{
+  height: 300px;
+  }
+}
+
 .btn {
   margin: 5px;
 }

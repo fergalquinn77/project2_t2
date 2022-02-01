@@ -16,31 +16,41 @@
 </head>
 
 <body>
-    <div class="logoimage text-center">
-        <img id="logo" src="assets/images/logo.png" alt="Logo image">
-    </div>
-    <h1 class="text-center">Rock, Paper, Sciccors, Lizard, Spock</h1>
-    <div id="intro-message" class="text-center">
-        <div class="col-lg"></div>
-        <p>Welcome! Reckon you can beat the computer? Hit the start button below and give it a shot.
-            You can choose easy, which is the standard form of rock, paper, scissors or you can choose difficult,
-            which includes two further options - namely Lizard and Spock. <br><br>So here's how it works. Scissors cuts
-            paper, paper covers
-            rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard,
-            lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors.
-            If this doesn't make sense, let Sheldon try to explain it..
-            <br>
-        </p>
+    <header>
+        <div class="logoimage text-center">
+            <img id="logo" src="assets/images/logo.png" alt="Logo image">
+        </div>
+        <h1 class="text-center">Rock, Paper, Sciccors, Lizard, Spock</h1>
+    </header>
+    <section id="intro">
+        <div id="intro-message" class="text-center">
+            <div class="col-lg"></div>
+            <p>Welcome! Reckon you can beat the computer? Hit the start button below and give it a shot.
+                You can choose easy, which is the standard form of rock, paper, scissors or you can choose difficult,
+                which includes two further options - namely Lizard and Spock. <br><br>So here's how it works. Scissors
+                cuts
+                paper, paper covers
+                rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard,
+                lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes
+                scissors.
+                If this doesn't make sense, let Sheldon try to explain it..
+                <br>
+            </p>
+    </section>
+    <section id="video">
         <div class="embed-youtube">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/x5Q6-wMx-K8"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
-        <p><br>Please choose the <strong>difficulty</strong> and <strong>number of games</strong> in the game
-            settings area below and click the start button to play.</p>
-    </div>
-    <div id="game-area">
+    </section>
+
+
+    <p><br>Please choose the <strong>difficulty</strong> and <strong>number of games</strong> in the game
+        settings area below and click the start button to play.</p>
+
+    <section id="game-area">
 
         <div class="container">
 
@@ -71,49 +81,53 @@
 
 
         </div>
-    </div>
+    </section>
 
-    <div id="scoreboard" class="moves row text-center" style="display:none;">
+    <section id="scores">
+        <div id="scoreboard" class="moves row text-center" style="display:none;">
 
-        <h2>Scoreboard</h2>
+            <h2>Scoreboard</h2>
 
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">Score</th>
-                    <th scope="col">Last Move</th>
-                    <th scope="col">Last Result</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">You</th>
-                    <td id="userLastMove"></td>
-                    <td id="userScore">0</td>
-                </tr>
-                <tr>
-                    <th scope="row">Computer</th>
-                    <td id="computerLastMove"></td>
-                    <td id="computerScore">0</td>
-                </tr>
-            </tbody>
-        </table>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Score</th>
+                        <th scope="col">Last Move</th>
+                        <th scope="col">Last Result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">You</th>
+                        <td id="userLastMove"></td>
+                        <td id="userScore">0</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Computer</th>
+                        <td id="computerLastMove"></td>
+                        <td id="computerScore">0</td>
+                    </tr>
+                </tbody>
+            </table>
 
-        <div class="controls text-center">
-            <button id="reset" text-align="center" type="button" class="btn btn-warning col-sm"
-                style="display:none;">Reset</button>
+
+            <div class="controls text-center">
+                <button id="reset" text-align="center" type="button" class="btn btn-warning col-sm"
+                    style="display:none;">Reset</button>
+            </div>
+
+            <!-- Scoreboard that become active after game starts -->
+
+            <div id="finish-text">
+                <p id="finish" class="bg-danger"></p>
+            </div>
+
+            <!-- Game over text that displays once the game is over. -->
+
         </div>
+    </section>
 
-        <!-- Scoreboard that become active after game starts -->
-
-        <div id="finish-text">
-            <p id="finish" class="bg-danger"></p>
-        </div>
-
-        <!-- Game over text that displays once the game is over. -->
-
-    </div>
-
+    <section id="controls">
     <div id="startControls">
         <h2>Game Settings</h2>
         <br>
@@ -138,7 +152,7 @@
         <button id="start" type="button" class="btn btn-success">Start</button>
 
     </div>
-
+</section>
     <!-- Game controls - input easy/difficult and number of games. -->
 
     <script src="assets/js/script.js"></script>
