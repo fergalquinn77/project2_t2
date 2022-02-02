@@ -33,12 +33,12 @@ body {
 }
 
 .embed-youtube {
-  width: 50%;
-  margin: 0 auto;
+  margin:0 auto;
 }
 
+
 #video {
-  background-color: white;
+  align-items: center;
 }
 
 .btn {
