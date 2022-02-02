@@ -27,7 +27,7 @@ body {
   font-size: 1.25em;
 }
 
-. #intro-message .btn {
+#intro-message .btn {
   display: inline-block;
   margin: 10px;
 }

@@ -110,8 +110,8 @@ function startGame() {
     document.getElementById("start").style.display = "none";
     document.getElementById("video").style.display = "none";
     document.getElementById("startControls").style.display = "none";
-    document.getElementById("reset").style.display = "flex";
-    document.getElementById("newGame").style.display = "flex";
+    document.getElementById("reset").style.display = "block";
+    document.getElementById("newGame").style.display = "block";
     document.getElementById("scoreboard").style.display = "flex";
     document.getElementById("intro-message").style.display = "none";
 
