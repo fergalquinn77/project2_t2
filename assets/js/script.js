@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("reset").onclick = gameReset;
     document.getElementById("easy-inst").onclick = easyInst;
     document.getElementById("diff-inst").onclick = diffInst;
+    document.getElementById("newGame").onclick = newGame;
 
 });
 
@@ -107,8 +108,10 @@ function startGame() {
     /* Show buttons relating to level of difficulty as selected by user */
 
     document.getElementById("start").style.display = "none";
+    document.getElementById("video").style.display = "none";
     document.getElementById("startControls").style.display = "none";
     document.getElementById("reset").style.display = "flex";
+    document.getElementById("newGame").style.display = "flex";
     document.getElementById("scoreboard").style.display = "flex";
     document.getElementById("intro-message").style.display = "none";
 
@@ -180,4 +183,8 @@ function easyInst() {
 
 function diffInst() {
     document.getElementById('instructions').innerText = "Rock crushes scissors, Paper covers rock, Scissors cuts paper, Rock crushes lizard, Lizard poisons spock, Spock smashes scissors, Scissors decapitates lizard, Lizard eats paper, Paper disproves Spock, Spock vaporizes rock";
+}
+
+function newGame() {
+    location.reload();
 }

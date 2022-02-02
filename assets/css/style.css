@@ -43,6 +43,7 @@ body {
 
 .btn {
   margin: 5px;
+  text-align: center;
 }
 
 #reset {
@@ -50,20 +51,24 @@ body {
 }
 
 #startControls {
-  width: 350px;
-  border: 5px solid green;
-  padding: 40px;
-  margin: 0px auto;
-  justify-content: center;
+  background-color: #bd1515;
+  color: white;
+  font-size: 1.25em;
   text-align: center;
 }
 
 #scoreboard {
   width: 350px;
+  background-color: #bd1515;
+  color: white;
   border: 5px solid green;
   padding: 40px;
   margin: 0px auto;
   justify-content: center;
+}
+
+.play_btn{
+  width: 150px;
 }
 
 #difficulty {
