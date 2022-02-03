@@ -16,37 +16,50 @@
 </head>
 
 <body>
-    <header>
-        <div class="logoimage text-center">
-            <img id="logo" src="assets/images/rock-paper-scissors-small.png" alt="Logo image">
-        </div>
-    </header>
-    <section id="intro">
+    <section id="intro" class="game-area">
         <div id="intro-message" class="text-center">
             <div class="col-lg"></div>
-            <p>Welcome to Rock, Paper, Scissors. Have you ever played a computer before? Here's your chance!. There are
-                two versions - Easy and Difficult.<br>
-
-                <button id="easy-inst" text-align="center" type="button" class="btn btn-warning play_btn">Easy</button>
-                <button id="diff-inst" text-align="center" type="button"
-                    class="btn btn-warning play_btn">Difficult</button>
-
-
-                <div id="instructions">
-                </div>
-        </div>
-        </p>
+            <h1>Welcome to Rock, Paper, Scissors.</h1>
+            <button id="go-to-step2" text-align="center" type="button" class="btn btn-warning play_btn">Next</button>
     </section>
-    <section id="video">
+
+    <section id="step2" class="game-area d-none">
+        <h1>Most people know the standard version of the game. But do you know the difficult version that includes
+            Lizard & Spock? </h1>
+
+        <button id="learn-more" text-align="center" type="button" class="btn btn-warning play_btn">Show Me</button>
+        <button text-align="center" type="button" class="go-to-step3 btn btn-warning play_btn">Play Now</button>
+    </section>
+
+    <section id="learn-more" class="game-area d-none">
+        <h1>Learn more about Rock, Paper, Scissors, Lizard, Spock</h1>
         <div class="embed-youtube" style="text-align: center;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/x5Q6-wMx-K8"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
+        <button text-align="center" type="button" class="go-to-step3 btn btn-warning play_btn">Next</button>
     </section>
 
-    <section id="game-area">
+    <section id="step3" class="game-area d-none">
+        <h1>Choose Number Of Games And Difficulty</h1>
+        <label for="numberGames">Number of Games: </label>
+
+            <select name="numberGames" id="numberGames">
+                <option value=5>5</option>
+                <option value=6>6</option>
+                <option value=7>7</option>
+                <option value=8>8</option>
+                <option value=9>9</option>
+                <option value=10>10</option>
+        <button id="easy-inst" text-align="center" type="button" class="btn btn-warning play_btn">Easy</button>
+        <button id="diff-inst" text-align="center" type="button" class="btn btn-warning play_btn">Difficult</button>
+
+    </section>
+
+
+    <section id="step4" class="game-area d-none">
 
         <div class="container">
 
@@ -72,15 +85,9 @@
 
             <!-- Additional buttons for the difficult version of game. -->
 
-
-
         </div>
-    </section>
-
-    <section id="scores">
-        <div id="scoreboard" class="moves row text-center" style="display:none;">
-
-            <h2>Scoreboard</h2>
+    
+        <h2>Scoreboard</h2>
 
             <table class="table">
                 <thead>
@@ -105,13 +112,13 @@
             </table>
 
 
-            <div class="controls text-center">
+            <!-- <div class="controls text-center">
                 <button id="reset" text-align="center" type="button" class="btn btn-warning play_btn"
                     style="display:none;">Reset Scores</button>
                 <button id="newGame" text-align="center" type="button" class="btn btn-success play_btn"
                     style="display:none;">New Game</button>
             </div>
-
+ -->
             <!-- Scoreboard that become active after game starts -->
 
             <div id="finish-text">
@@ -123,6 +130,7 @@
         </div>
     </section>
 
+    <section id="finish" class="game-area d-none"></section>
     <section id="controls">
         <div id="startControls">
             <h2>Game Settings</h2>
@@ -138,15 +146,7 @@
                 <option value="hard">Hard</option>
             </select>
             <br>
-            <label for="numberGames">Number of Games: </label>
-
-            <select name="numberGames" id="numberGames">
-                <option value=5>5</option>
-                <option value=6>6</option>
-                <option value=7>7</option>
-                <option value=8>8</option>
-                <option value=9>9</option>
-                <option value=10>10</option>
+            
             </select>
             <br>
 
