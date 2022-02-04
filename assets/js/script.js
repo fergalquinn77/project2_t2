@@ -20,6 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
 /* Add event listeners for all buttons */
 const easy_moves = ["rock", "paper", "scissors"];
 const diff_moves = ["rock", "paper", "scissors", "spock", "lizard"];
+const playerName = document.getElementById("player-name");
+const regEx = /^(?! )[A-Za-z\s\xC0-\uFFFF]*$/;
 
 function runGame(gameType) {
 
@@ -98,8 +100,14 @@ function runGame(gameType) {
 }
 
 function step2(){
-    document.getElementById("intro").style.display = "none";
-    document.getElementById("step2").style.display = "block";
+    let player = playerName.value;
+    if (playerName.value.match(regEx) && playerName.value != null && playerName.value != undefined && playerName.value != "") {
+        let player = playerName.value;
+        
+        document.getElementById("question").innerText=`Hi ${player}, do you know how to play`;
+    } 
+document.getElementById("intro").style.display = "none";
+document.getElementById("step2").style.display = "block";
 }
 
 function startGame() {
