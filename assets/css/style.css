@@ -1,19 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
   border: none;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: 'Supermercado One', cursive;
+  font-weight: normal;
 }
 
 body {
   background-color: white;
-}
-
-#logo {
-  max-width: 400px;
-  margin-top:4%;
-  text-align: center;
-  display:block;
-  margin: 0 auto;
 }
 
 html {
@@ -21,12 +20,16 @@ html {
   background-size: cover;
 }
 
+h1 {
+  font-size:24px;
+}
+
 .game-area {
   background-color: lightgrey;
   opacity: 0.95;
   margin: 0;
   height: 600px;
-  max-width: 900px;
+ width: 900px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -35,11 +38,51 @@ html {
   z-index: -1;
 }
 
+.logo {
+  max-width: 200px;
+  margin-top:10px;
+  text-align: center;
+  display:block;
+  margin: 0 auto;
+}
+
+.header-title {
+  margin-top: 40px;
+    text-align: center;
+}
+
+.main-message{
+  margin-top: 60px;
+    text-align: center;
+}
+
+.start-input-name {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.start-input-name input {
+  width: 50%;
+  height: 33px;
+  background-color: #faf9f6;
+  color: black;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.start-game-area-btn {
+  margin-top: 94px;
+  text-align: center;
+}
 
 .step-forward {
     margin-top: 90px;
     text-align: center;
-  }
+}
+
+.play_btn {
+    width:150px;
+}
 
 /* .flex-container {
   display: flex;

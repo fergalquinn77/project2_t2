@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
             runGame(gameType);
         });
     }
-    document.getElementById("go-to-step2").onclick = step2;
     document.getElementById("start").onclick = startGame;
     document.getElementById("reset").onclick = gameReset;
     document.getElementById("easy-inst").onclick = easyInst;
