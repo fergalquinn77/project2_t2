@@ -100,8 +100,7 @@ function runGame(gameType) {
 
 function step2(){
     document.getElementById("intro").style.display = "none";
-    document.getElementById("step2").style.display = "flex";
-    document.getElementById("step2").style.flexDirection = "column";
+    document.getElementById("step2").style.display = "block";
 }
 
 function startGame() {

@@ -10,9 +10,10 @@ body {
 
 #logo {
   max-width: 400px;
-  display: block;
-  position:absolute;
-  margin-top: 10px;
+  margin-top:4%;
+  text-align: center;
+  display:block;
+  margin: 0 auto;
 }
 
 html {
@@ -34,22 +35,11 @@ html {
   z-index: -1;
 }
 
-.game-inner {
-  height: 600px;
-  max-width: 900px;
-  position: relative;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
 
-#go-to-step2 {
-  width: 150px;
-  margin: 0;
-  position: absolute;
-  bottom: 20px;
-  transform: translate(-50, -50);
-}
+.step-forward {
+    margin-top: 90px;
+    text-align: center;
+  }
 
 /* .flex-container {
   display: flex;
