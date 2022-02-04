@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
             runGame(gameType);
         });
     }
+    document.getElementById("go-to-step2").onclick = step2;
     document.getElementById("start").onclick = startGame;
     document.getElementById("reset").onclick = gameReset;
     document.getElementById("easy-inst").onclick = easyInst;
@@ -95,6 +96,12 @@ function runGame(gameType) {
         updateUserMoves(gameType, computerMove);
     }
 
+}
+
+function step2(){
+    document.getElementById("intro").style.display = "none";
+    document.getElementById("step2").style.display = "flex";
+    document.getElementById("step2").style.flexDirection = "column";
 }
 
 function startGame() {

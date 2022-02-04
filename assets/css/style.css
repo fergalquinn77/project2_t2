@@ -9,10 +9,10 @@ body {
 }
 
 #logo {
-  height: 200px;
-  top:20px;
-  display:absolute;
-  top:20px;
+  max-width: 400px;
+  display: block;
+  position:absolute;
+  margin-top: 10px;
 }
 
 html {
@@ -34,22 +34,21 @@ html {
   z-index: -1;
 }
 
-.game-inner{
+.game-inner {
   height: 600px;
   max-width: 900px;
-  position:relative;
-  justify-content: center;
+  position: relative;
   align-items: center;
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
 
 #go-to-step2 {
-  width:150px;
+  width: 150px;
   margin: 0;
   position: absolute;
-  bottom:20px;
-  transform: translate(-50,-50);
+  bottom: 20px;
+  transform: translate(-50, -50);
 }
 
 /* .flex-container {
