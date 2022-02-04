@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 * {
   margin: 0;
@@ -7,7 +6,7 @@
   border: none;
   box-sizing: border-box;
   font-size: 18px;
-  font-family: 'Supermercado One', cursive;
+  font-family: 'Montserrat', sans-serif;
   font-weight: normal;
 }
 
@@ -21,7 +20,7 @@ html {
 }
 
 h1 {
-  font-size:24px;
+  font-size: 24px;
 }
 
 .game-area {
@@ -29,7 +28,7 @@ h1 {
   opacity: 0.95;
   margin: 0;
   height: 600px;
- width: 900px;
+  width: 900px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -40,20 +39,20 @@ h1 {
 
 .logo {
   max-width: 200px;
-  margin-top:10px;
+  margin-top: 10px;
   text-align: center;
-  display:block;
+  display: block;
   margin: 0 auto;
 }
 
 .header-title {
   margin-top: 40px;
-    text-align: center;
+  text-align: center;
 }
 
-.main-message{
+.main-message {
   margin-top: 60px;
-    text-align: center;
+  text-align: center;
 }
 
 .start-input-name {
@@ -76,27 +75,32 @@ h1 {
 }
 
 .step-forward {
-    margin-top: 90px;
-    text-align: center;
-}
-
-.play_btn {
-    width:150px;
-}
-
-.play-now{
-  margin-top:90px;
+  margin-top: 90px;
   text-align: center;
 }
 
-#sheldon-title{
-  margin-top:30px;
+.play_btn {
+  width: 150px;
+}
+
+.play-now {
+  margin-top: 90px;
+  text-align: center;
+}
+
+#sheldon-title {
+  margin-top: 30px;
   text-align: center;
 }
 
 .embed-youtube {
-  margin-top:60px;
+  margin-top: 60px;
   text-align: center;
+}
+
+.instructions{
+  margin:20px;
+  text-align:center;
 }
 
 /* .flex-container {
