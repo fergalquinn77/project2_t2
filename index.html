@@ -58,25 +58,38 @@
             <p>You can learn more or just go ahead and play</p>
 
         </div>
-        <div id="play-now">
-            <button text-align="center" type="button" class="go-to-step3 btn btn-warning play_btn">Learn More</button>
-        
+        <div class="play-now">
+            <button id="learn-more" text-align="center" type="button" class="btn btn-warning play_btn">Learn
+                More</button>
+
             <button text-align="center" type="button" class="go-to-step3 btn btn-success play_btn">Play Now</button>
         </div>
     </section>
 
-    <section id="learn-more" class="game-area d-none">
-        <h1>Learn more about Rock, Paper, Scissors, Lizard, Spock</h1>
+    <!-- Learn more about how to play -->
+
+    <section id="learn-more-section" class="game-area" style="display:none" ;>
+        <!-- <div class="logo-image">
+            <img class="logo" src="assets/images/logo.png">
+        </div> -->
+        <div id="sheldon-title">
+            <h1>Let Sheldon explain it! <i class="far fa-smile-wink"></i></h1>
+        </div>
         <div class="embed-youtube" style="text-align: center;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/x5Q6-wMx-K8"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
-        <button text-align="center" type="button" class="go-to-step3 btn btn-warning play_btn">Next</button>
+        <div class="play-now">
+            <button text-align="center" type="button" class="go-to-step3 btn btn-success play_btn">Play Now</button>
+
+        </div>
     </section>
 
-    <section id="step3" class="game-area d-none">
+    <!-- Choose Level of Difficulty -->
+    
+    <section id="step3" class="game-area" style="display:none";>
         <h1>Choose Number Of Games And Difficulty</h1>
         <label for="numberGames">Number of Games: </label>
 

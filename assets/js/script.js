@@ -9,11 +9,14 @@ document.addEventListener("DOMContentLoaded", function () {
             runGame(gameType);
         });
     }
+    document.getElementById("learn-more").onclick = learnMore;
+
     document.getElementById("start").onclick = startGame;
     document.getElementById("reset").onclick = gameReset;
     document.getElementById("easy-inst").onclick = easyInst;
     document.getElementById("diff-inst").onclick = diffInst;
     document.getElementById("newGame").onclick = newGame;
+
 
 });
 
@@ -99,15 +102,20 @@ function runGame(gameType) {
 
 }
 
-function step2(){
+function step2() {
     let player = playerName.value;
     if (playerName.value.match(regEx) && playerName.value != null && playerName.value != undefined && playerName.value != "") {
         let player = playerName.value;
-        
-        document.getElementById("question").innerText=`Hi ${player}, do you know how to play`;
-    } 
-document.getElementById("intro").style.display = "none";
-document.getElementById("step2").style.display = "block";
+
+        document.getElementById("question").innerText = `Hi ${player}, do you know how to play`;
+    }
+    document.getElementById("intro").style.display = "none";
+    document.getElementById("step2").style.display = "block";
+}
+
+function learnMore() {
+    document.getElementById("step2").style.display = "none";
+    document.getElementById("learn-more-section").style.display = "block";
 }
 
 function startGame() {
