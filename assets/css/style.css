@@ -27,7 +27,7 @@ h1 {
   background-color: lightgrey;
   opacity: 0.95;
   margin: 0;
-  height: 600px;
+  height: 700px;
   width: 900px;
   position: absolute;
   top: 50%;
@@ -46,7 +46,7 @@ h1 {
 }
 
 .header-title {
-  margin-top: 40px;
+  margin-top: 240px;
   text-align: center;
 }
 
@@ -83,24 +83,47 @@ h1 {
   width: 150px;
 }
 
-.play-now {
-  margin-top: 90px;
-  text-align: center;
-}
-
 #sheldon-title {
   margin-top: 30px;
   text-align: center;
 }
 
 .embed-youtube {
-  margin-top: 60px;
+  margin-top: 0px;
   text-align: center;
 }
 
-.instructions{
-  margin:20px;
-  text-align:center;
+#instructions{
+  margin-top: 0px;
+  text-align: center;
+}
+
+#play-learn{
+  margin-top: 160px;
+  text-align: center;
+}
+#play-learn-more{
+  margin-top: 0px;
+  text-align: center;
+}
+
+#diff-version{
+  margin-top: 0px;
+  text-align: center;
+}
+
+#video-page{
+  margin-top: 200px;
+  text-align: center;
+}
+
+#play-now{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.instruction-text{
+  margin: 10px;
 }
 
 /* .flex-container {

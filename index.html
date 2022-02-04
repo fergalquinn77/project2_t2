@@ -20,131 +20,158 @@
 <body>
 
     <!-- Step 1 - Welcome message -->
-
-    <section id="intro" class="game-area">
+    <section class="game-area">
         <div class="logo-image">
             <img class="logo" src="assets/images/logo.png">
         </div>
-        <div class="header-title">
-            <h1>Welcome to Rock, Paper, Scissors</h1>
-        </div>
-        <div class="main-message">
-            <p>Please enter your name to proceed onto next stage</p>
 
-        </div>
-        <div class="start-input-name">
-            <form action="javascript:void(0)" onsubmit="step2()">
-                <label for="player-name"></label>
-                <input type="text" id="player-name" placeholder="Name" maxlength="10" required />
-                <div class="start-game-area-btn">
-                    <button aria-label="next-button" id="next-btn" class="hover btn btn-warning play_btn">Next</button>
+        <section id="intro" class="game-area">
+
+            <div class="header-title">
+                <h1>Welcome to Rock, Paper, Scissors</h1>
+            </div>
+            <div class="main-message">
+                <p>Please enter your name to proceed onto next stage</p>
+
+            </div>
+            <div class="start-input-name">
+                <form action="javascript:void(0)" onsubmit="step2()">
+                    <label for="player-name"></label>
+                    <input type="text" id="player-name" placeholder="Name" maxlength="10" required />
+                    <div class="start-game-area-btn">
+                        <button aria-label="next-button" id="next-btn"
+                            class="hover btn btn-warning play_btn">Next</button>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+
+        <!-- Step 2 - Find out do they need instructions -->
+
+        <section id="step2" class="game-area" style="display:none" ;>
+
+            <!-- <div class="logo-image">
+                <img class="logo" src="assets/images/logo.png">
+            </div> -->
+            <div class="header-title">
+                <h1 id="question"></h1>
+            </div>
+            <div class="main-message">
+                <p>You can learn more or just go ahead and play</p>
+
+            </div>
+            <div id="play-learn">
+                <button id="learn-more" text-align="center" type="button" class="btn btn-warning play_btn">Learn
+                    More</button>
+
+                <button text-align="center" type="button" class="btn btn-success play_btn">Play Now</button>
+            </div>
+        </section>
+
+        <!-- Learn more about how to play -->
+
+        <section id="learn-more-section" class="game-area" style="display:none" ;>
+            <!-- <div class="logo-image">
+                <img class="logo" src="assets/images/logo.png">
+            </div> -->
+            <div class="header-title">
+                <h1>Learn More</h1>
+            </div>
+            <div id="instructions">
+
+                <p class="instruction-text">Rock paper scissors is a hand game, usually played between two people,
+                    in which each player simultaneously forms one of three shapes with an outstretched hand.
+                    These shapes are "rock" (a closed fist), "paper" (a flat hand), and "scissors" (a fist with
+                    the index finger and middle finger extended, forming a V). "Scissors" is identical to the
+                    two-fingered V sign (also indicating "victory" or "peace") except that it is
+                    pointed horizontally instead of being held upright in the air.<br>This is the standard or
+                    <strong>easy
+                        version</strong> of the game. However, there is a more <strong>difficult version</strong>
+                    that includes two further moves - namely, Lizard and Spock.</p>
+            </div>
+
+
+            <div id="play-learn-more">
+                <button text-align="center" type="button" class="btn btn-success play_btn">Play Now</button>
+                <button id="learn-difficult" text-align="center" type="button" class="btn btn-info play_btn">Learn
+                    More</button>
+
+            </div>
+        </section>
+
+        <section id="diff-instructions" class="game-area" style="display:none";>
+
+            <div id="video-page">
+                <h1>The Difficult Version</h1>
+                <p class="instruction-text">Rock crushes scissors, Paper covers rock, Scissors cuts paper, Rock crushes lizard, Lizard
+                    poisons
+                    spock,
+                    Spock smashes scissors, Scissors decapitates lizard, Lizard eats paper, Paper disproves Spock,
+                    Spock
+                    vaporizes rock</p>
+            </div>
+
+            <div class="embed-youtube" style="text-align: center;">
+                <iframe  id="video" width="420" height="236" src="https://www.youtube.com/embed/x5Q6-wMx-K8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div id="play-now">
+                <button text-align="center" type="button" class="btn btn-success play_btn">Play Now</button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Choose Level of Difficulty -->
+
+        <section id="step3" class="game-area" style="display:none" ;>
+            <h1>Choose Number Of Games And Difficulty</h1>
+            <label for="numberGames">Number of Games: </label>
+
+            <select name="numberGames" id="numberGames">
+                <option value=5>5</option>
+                <option value=6>6</option>
+                <option value=7>7</option>
+                <option value=8>8</option>
+                <option value=9>9</option>
+                <option value=10>10</option>
+                <button id="easy-inst" text-align="center" type="button" class="btn btn-warning play_btn">Easy</button>
+                <button id="diff-inst" text-align="center" type="button"
+                    class="btn btn-warning play_btn">Difficult</button>
+
+        </section>
+
+
+        <section id="step4" class="game-area d-none">
+
+            <div class="container">
+
+                <!-- This intro-message shows on initial load. It clears after game has started -->
+
+                <div id="easy" class="row center" style="display:none;">
+                    <button type="button" class="btn btn-primary col-sm btn-play" data-type="rock">Rock <i
+                            class="far fa-hand-rock"></i></button>
+                    <button type="button" class="btn btn-primary col-sm btn-play" data-type="paper">Paper <i
+                            class="far fa-hand-paper"></i></button>
+                    <button type="button" class="btn btn-primary col-sm btn-play" data-type="scissors">Scissors <i
+                            class="far fa-hand-scissors"></i></button>
                 </div>
-            </form>
-        </div>
 
-    </section>
+                <!-- These are the buttons which are used for the easy version of the game. -->
 
-    <!-- Step 2 - Find out do they need instructions -->
-
-    <section id="step2" class="game-area" style="display:none" ;>
-
-        <div class="logo-image">
-            <img class="logo" src="assets/images/logo.png">
-        </div>
-        <div class="header-title">
-            <h1 id="question"></h1>
-        </div>
-        <div class="main-message">
-            <p>You can learn more or just go ahead and play</p>
-
-        </div>
-        <div class="play-now">
-            <button id="learn-more" text-align="center" type="button" class="btn btn-warning play_btn">Learn
-                More</button>
-
-            <button text-align="center" type="button" class="go-to-step3 btn btn-success play_btn">Play Now</button>
-        </div>
-    </section>
-
-    <!-- Learn more about how to play -->
-
-    <section id="learn-more-section" class="game-area" style="display:none" ;>
-        <div class="logo-image">
-            <img class="logo" src="assets/images/logo.png">
-        </div>
-        <div class="instructions">
-            <h1>The Basics</h1>
-            <p>Rock paper scissors is a hand game, usually played between two people, 
-                in which each player simultaneously forms one of three shapes with an outstretched hand. 
-                These shapes are "rock" (a closed fist), "paper" (a flat hand), and "scissors" (a fist with 
-                the index finger and middle finger extended, forming a V). "Scissors" is identical to the 
-                two-fingered V sign (also indicating "victory" or "peace") except that it is 
-                pointed horizontally instead of being held upright in the air.</p>
-        </div>
-        <div class="instructions" >
-            <h1>The Easy Version</h1>
-            <p>Rock crushes scissors, Paper covers rock and Scissors cuts paper</p>
-        </div>
-        <div class="instructions">
-            <h1>The Difficult Version</h1>
-            <p>Rock crushes scissors, Paper covers rock, Scissors cuts paper, Rock crushes lizard, Lizard poisons spock, Spock smashes scissors, Scissors decapitates lizard, Lizard eats paper, Paper disproves Spock, Spock vaporizes rock</p>
-        </div>
-        <div class="embed-youtube" style="text-align: center; display:none;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/x5Q6-wMx-K8"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </div>
-        <div class="play-now">
-            <button text-align="center" type="button" class="go-to-step3 btn btn-success play_btn">Play Now</button>
-
-        </div>
-    </section>
-
-    <!-- Choose Level of Difficulty -->
-
-    <section id="step3" class="game-area" style="display:none";>
-        <h1>Choose Number Of Games And Difficulty</h1>
-        <label for="numberGames">Number of Games: </label>
-
-        <select name="numberGames" id="numberGames">
-            <option value=5>5</option>
-            <option value=6>6</option>
-            <option value=7>7</option>
-            <option value=8>8</option>
-            <option value=9>9</option>
-            <option value=10>10</option>
-            <button id="easy-inst" text-align="center" type="button" class="btn btn-warning play_btn">Easy</button>
-            <button id="diff-inst" text-align="center" type="button" class="btn btn-warning play_btn">Difficult</button>
-
-    </section>
-
-
-    <section id="step4" class="game-area d-none">
-
-        <div class="container">
-
-            <!-- This intro-message shows on initial load. It clears after game has started -->
-
-            <div id="easy" class="row center" style="display:none;">
-                <button type="button" class="btn btn-primary col-sm btn-play" data-type="rock">Rock <i
-                        class="far fa-hand-rock"></i></button>
-                <button type="button" class="btn btn-primary col-sm btn-play" data-type="paper">Paper <i
-                        class="far fa-hand-paper"></i></button>
-                <button type="button" class="btn btn-primary col-sm btn-play" data-type="scissors">Scissors <i
-                        class="far fa-hand-scissors"></i></button>
-            </div>
-
-            <!-- These are the buttons which are used for the easy version of the game. -->
-
-            <div id="difficult" class="row text-center" style="display:none;">
-                <button type="button" class="btn btn-primary col-sm btn-play" data-type="spock">Spock <i
-                        class="far fa-hand-spock"></i></button>
-                <button type="button" class="btn btn-primary col-sm btn-play" data-type="lizard">Lizard <i
-                        class="far fa-hand-lizard"></i></button>
-            </div>
-
-            <!-- Additional buttons for the difficult version of game. -->
+                <div id="difficult" class="row text-center" style="display:none;">
+                    <button type="button" class="btn btn-primary col-sm btn-play" data-type="spock">Spock <i
+                            class="far fa-hand-spock"></i></button>
+                    <button type="button" class="btn btn-primary col-sm btn-play" data-type="lizard">Lizard <i
+                            class="far fa-hand-lizard"></i></button>
+                </div>
+        </section>
+        <!-- Additional buttons for the difficult version of game. -->
 
         </div>
 

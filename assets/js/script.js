@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
     document.getElementById("learn-more").onclick = learnMore;
+    document.getElementById("learn-difficult").onclick = learnDifficult;
 
     document.getElementById("start").onclick = startGame;
     document.getElementById("reset").onclick = gameReset;
@@ -116,6 +117,11 @@ function step2() {
 function learnMore() {
     document.getElementById("step2").style.display = "none";
     document.getElementById("learn-more-section").style.display = "block";
+}
+
+function learnDifficult(){
+    document.getElementById("learn-more-section").style.display = "none";
+    document.getElementById("diff-instructions").style.display = "block";
 }
 
 function startGame() {
