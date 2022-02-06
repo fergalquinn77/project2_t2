@@ -121,14 +121,18 @@ h1 {
   text-align: center;
 }
 
-/* #video-page{
-  margin-top: 200px;
-  text-align: center;
-} */
+#game-inplay{
+  width: inherit;
+}
 
-#play-now{
-  margin-top: 20px;
+#game-buttons{
   text-align: center;
+}
+
+#easy-buttons,
+#easy-buttons > button,
+#diff-buttons {
+display: inline-block;
 }
 
 .instruction-text{

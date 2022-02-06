@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("learn-more").onclick = learnMore;
     document.getElementById("learn-difficult").onclick = learnDifficult;
+    document.getElementById("easy").onclick = playEasy;
 
     document.getElementById("start").onclick = startGame;
     document.getElementById("reset").onclick = gameReset;
@@ -140,26 +141,12 @@ function openSettings(){
     console.log("settings");
 }
 
-function startGame() {
-    console.log("Start");
-    if (document.getElementById("difficulty").value === "easy") {
-        document.getElementById("easy").style.display = "flex";
-    } else {
-        document.getElementById("easy").style.display = "flex";
-        document.getElementById("difficult").style.display = "flex";
-    }
-    /* Show buttons relating to level of difficulty as selected by user */
-
-    document.getElementById("start").style.display = "none";
-    document.getElementById("video").style.display = "none";
-    document.getElementById("startControls").style.display = "none";
-    document.getElementById("reset").style.display = "block";
-    document.getElementById("newGame").style.display = "block";
-    document.getElementById("scoreboard").style.display = "flex";
-    document.getElementById("intro-message").style.display = "none";
-
-    /* Adjust page by displaying and hiding content after game is started */
+function playEasy(){
+    document.getElementById("game-settings").style.display = "none";
+    document.getElementById("game-inplay").style.display = "inline-block";
+    
 }
+
 
 function updateUserMoves(user, comp) {
     document.getElementById("userLastMove").innerText = user;
