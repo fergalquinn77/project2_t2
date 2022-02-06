@@ -1,11 +1,12 @@
-let win, lose, gameType;
+
+
 document.addEventListener("DOMContentLoaded", function () {
 
-    let buttons = document.getElementsByClassName("btn-play");
+    let buttons = document.getElementsByClassName("btn-play-game");
 
     for (let button of buttons) {
         button.addEventListener("click", function () {
-            gameType = this.getAttribute("data-type");
+            gameType = this.getAttribute("id");
             runGame(gameType);
         });
     }
@@ -145,6 +146,8 @@ function openSettings(){
 function playEasy(){
     document.getElementById("game-settings").style.display = "none";
     document.getElementById("game-inplay").style.display = "inline-block";
+    document.getElementById("playerName").innerText = playerName.value;
+
 
 }
 
@@ -153,6 +156,7 @@ function playDiff(){
     document.getElementById("game-settings").style.display = "none";
     document.getElementById("game-inplay").style.display = "inline-block";
     document.getElementById("diff-buttons").style.display = "inline-block";
+    document.getElementById("playerName").innerText = playerName.value;
 
 
 }

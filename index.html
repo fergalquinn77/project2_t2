@@ -166,8 +166,8 @@
                     <thead thead-dark>
                         <tr></tr>
                         <th scope="col"></th>
-                        <th scope="col">Player</th>
-                        <th scope="col">Comptuer</th>
+                        <th id="playerName" scope="col"></th>
+                        <th scope="col">Computer</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -182,6 +182,11 @@
                             <td></td>
                             <td></td>
                         </tr>
+                        <tr>
+                            <th scope="row">Remaining Moves</th>
+                            <td></td>
+                            <td></td>
+                        </tr>
                     </tbody>
                 </table>
 
@@ -191,22 +196,22 @@
             <div id="game-buttons">
                 <div id="easy-buttons">
                     <button id="paper" text-align="center" type="button"
-                        class="btn game-button btn-primary btn-lg play_btn">Paper <i
+                        class="btn game-button btn-primary btn-lg play_btn btn-play-game">Paper <i
                             class="far fa-hand-paper"></i></button>
                     <button id="rock" text-align="center" type="button"
-                        class="btn game-button btn-primary btn-lg play_btn">Rock <i
+                        class="btn game-button btn-primary btn-lg play_btn btn-play-game">Rock <i
                             class="far fa-hand-rock"></i></button>
                     <button id="scissors" text-align="center" type="button"
-                        class="btn game-button btn-primary btn-lg play_btn">Scissors <i
+                        class="btn game-button btn-primary btn-lg play_btn btn-play-game">Scissors <i
                             class="far fa-hand-scissors"></i></button>
                 </div>
                 <div id="diff-buttons" style="display:none">
 
                     <button id="lizard" text-align="center" type="button"
-                        class="btn game-button btn-primary btn-lg play_btn">Lizard <i
+                        class="btn game-button btn-primary btn-lg play_btn btn-play-game">Lizard <i
                             class="far fa-hand-lizard"></i></button>
                     <button id="spock" text-align="center" type="button"
-                        class="btn game-button btn-primary btn-lg play_btn">Spock <i
+                        class="btn game-button btn-primary btn-lg play_btn btn-play-game">Spock <i
                             class="far fa-hand-spock"></i></button>
                 </div>
             </div>

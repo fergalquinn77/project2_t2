@@ -139,10 +139,11 @@ display: inline-block;
   margin: 10px;
 }
 
-#scoreboard{
+#scoreboard {
   width:50%;
   text-align: center;
   margin: 0 auto;
+  
 }
 
 /* .flex-container {
