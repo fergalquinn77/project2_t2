@@ -158,10 +158,33 @@
         <section id="game-inplay" style="display:none" ;>
 
             <div class="header-title">
-                <h1>Welcome to Rock, Paper, Scissors</h1>
+                <h1>Let's Play</h1>
             </div>
-            <div class="main-message">
-                <p>Please click on a button below </p>
+            <div id="scoreboard">
+
+                <table class="table table-striped table-dark">
+                    <thead thead-dark>
+                        <tr></tr>
+                        <th scope="col"></th>
+                        <th scope="col">Player</th>
+                        <th scope="col">Comptuer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Scores</th>
+                            <td>0</td>
+                            <td>0</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Last Move</th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
             </div>
 
 
@@ -177,12 +200,12 @@
                         class="btn game-button btn-primary btn-lg play_btn">Scissors <i
                             class="far fa-hand-scissors"></i></button>
                 </div>
-                <div id="diff-buttons">
-                    
+                <div id="diff-buttons" style="display:none">
+
                     <button id="lizard" text-align="center" type="button"
                         class="btn game-button btn-primary btn-lg play_btn">Lizard <i
                             class="far fa-hand-lizard"></i></button>
-                            <button id="spock" text-align="center" type="button"
+                    <button id="spock" text-align="center" type="button"
                         class="btn game-button btn-primary btn-lg play_btn">Spock <i
                             class="far fa-hand-spock"></i></button>
                 </div>

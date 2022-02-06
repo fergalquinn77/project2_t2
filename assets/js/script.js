@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("learn-more").onclick = learnMore;
     document.getElementById("learn-difficult").onclick = learnDifficult;
     document.getElementById("easy").onclick = playEasy;
+    document.getElementById("difficult").onclick = playDiff;
 
     document.getElementById("start").onclick = startGame;
     document.getElementById("reset").onclick = gameReset;
@@ -144,9 +145,17 @@ function openSettings(){
 function playEasy(){
     document.getElementById("game-settings").style.display = "none";
     document.getElementById("game-inplay").style.display = "inline-block";
-    
+
 }
 
+
+function playDiff(){
+    document.getElementById("game-settings").style.display = "none";
+    document.getElementById("game-inplay").style.display = "inline-block";
+    document.getElementById("diff-buttons").style.display = "inline-block";
+
+
+}
 
 function updateUserMoves(user, comp) {
     document.getElementById("userLastMove").innerText = user;

@@ -139,6 +139,12 @@ display: inline-block;
   margin: 10px;
 }
 
+#scoreboard{
+  width:50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
 /* .flex-container {
   display: flex;
 }
