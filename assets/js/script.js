@@ -135,6 +135,7 @@ function learnDifficult(){
 function openSettings(){
     document.getElementById("learn-more-section").style.display = "none";
     document.getElementById("step2").style.display = "none";
+    document.getElementById("diff-instructions").style.display = "none";
     document.getElementById("game-settings").style.display = "block";
     console.log("settings");
 }
