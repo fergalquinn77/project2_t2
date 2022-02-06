@@ -20,12 +20,12 @@
 <body>
 
     <!-- Step 1 - Welcome message -->
-    <section class="game-area container">
+    <section class="game-area">
         <div class="logo-image">
             <img class="logo" src="assets/images/logo.png">
         </div>
 
-        <section id="intro" class="game-area">
+        <section id="intro">
 
             <div class="header-title">
                 <h1>Welcome to Rock, Paper, Scissors</h1>
@@ -49,11 +49,9 @@
 
         <!-- Step 2 - Find out do they need instructions -->
 
-        <section id="step2" class="game-area" style="display:none" ;>
+        <section id="step2" style="display:none" ;>
 
-            <!-- <div class="logo-image">
-                <img class="logo" src="assets/images/logo.png">
-            </div> -->
+
             <div class="header-title">
                 <h1 id="question"></h1>
             </div>
@@ -71,10 +69,8 @@
 
         <!-- Learn more about how to play -->
 
-        <section id="learn-more-section" class="game-area" style="display:none" ;>
-            <!-- <div class="logo-image">
-                <img class="logo" src="assets/images/logo.png">
-            </div> -->
+        <section id="learn-more-section" style="display:none" ;>
+
             <div class="header-title">
                 <h1>Learn More</h1>
             </div>
@@ -93,44 +89,24 @@
 
 
             <div class="start-game-area-btn">
-                <button text-align="center" type="button" class="btn btn-success play_btn">Play Now</button>
+                <button text-align="center" type="button" class="btn btn-success play_btn play-now">Play Now</button>
                 <button id="learn-difficult" text-align="center" type="button" class="btn btn-info play_btn">Learn
                     More</button>
 
             </div>
         </section>
 
-        <section id="diff-instructions" class="game-area" style="display:none";>
+        <!-- Learn more about the difficult version -->
 
-            <div id="video-page">
-                <h1>The Difficult Version</h1>
-                <p class="instruction-text">Rock crushes scissors, Paper covers rock, Scissors cuts paper, Rock crushes lizard, Lizard
-                    poisons
-                    spock,
-                    Spock smashes scissors, Scissors decapitates lizard, Lizard eats paper, Paper disproves Spock,
-                    Spock
-                    vaporizes rock</p>
+        <section id="game-settings" style="display:none" ;>
+
+            <div class="header-title">
+                <h1 class="main-message">Game Settings</h1>
+            </div>
+            <div class="main-message">
+            <p >Please set the game settings below</p>
             </div>
 
-            <div class="embed-youtube" style="text-align: center;">
-                <iframe  id="video" width="420" height="236" src="https://www.youtube.com/embed/x5Q6-wMx-K8"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-            <div class="start-game-area-btn">
-                <button text-align="center" type="button" class="btn btn-success play_btn">Play Now</button>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- Choose Level of Difficulty -->
-
-        <section id="step3" class="game-area" style="display:none" ;>
-            <h1>Choose Number Of Games And Difficulty</h1>
             <label for="numberGames">Number of Games: </label>
 
             <select name="numberGames" id="numberGames">
@@ -144,6 +120,7 @@
                 <button id="diff-inst" text-align="center" type="button"
                     class="btn btn-warning play_btn">Difficult</button>
 
+            
         </section>
 
 
