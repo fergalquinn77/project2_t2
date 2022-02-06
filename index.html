@@ -63,7 +63,7 @@
                 <button id="learn-more" text-align="center" type="button" class="btn btn-warning play_btn">Learn
                     More</button>
 
-                <button text-align="center" type="button" class="btn btn-success play_btn">Play Now</button>
+                <button text-align="center" type="button" class="btn btn-success btn-game-settings play_btn">Play Game</button>
             </div>
         </section>
 
@@ -89,7 +89,7 @@
 
 
             <div class="start-game-area-btn">
-                <button text-align="center" type="button" class="btn btn-success play_btn play-now">Play Now</button>
+                <button text-align="center" type="button" class="btn btn-success btn-game-settings play_btn">Play Game</button>
                 <button id="learn-difficult" text-align="center" type="button" class="btn btn-info play_btn">Learn
                     More</button>
 
@@ -98,84 +98,112 @@
 
         <!-- Learn more about the difficult version -->
 
+        <section id="diff-instructions" style="display:none" ;>
+
+            <div id="diff-version">
+                <h1 class="main-message">Let Sheldon Explain</h1>
+            </div>
+
+
+            <div class="embed-youtube" style="text-align: center;">
+                <iframe id="video" width="420" height="236" src="https://www.youtube.com/embed/x5Q6-wMx-K8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="start-game-area-btn">
+                <button text-align="center" type="button" class="btn btn-success play_btn play-now">Play Now</button>
+
+            </div>
+
+        </section>
+
+        <!-- Section for game settings -->
+
         <section id="game-settings" style="display:none" ;>
 
             <div class="header-title">
-                <h1 class="main-message">Game Settings</h1>
+                <h1>Game Settings</h1>
             </div>
             <div class="main-message">
-            <p >Please set the game settings below</p>
+                <p>Please select the number of games and then what level you wish to play</p>
             </div>
 
-            <label for="numberGames">Number of Games: </label>
+            <div id="numberOfGames">
+                <label for="numberGames">Number of Games</label>
 
-            <select name="numberGames" id="numberGames">
-                <option value=5>5</option>
-                <option value=6>6</option>
-                <option value=7>7</option>
-                <option value=8>8</option>
-                <option value=9>9</option>
-                <option value=10>10</option>
-                <button id="easy-inst" text-align="center" type="button" class="btn btn-warning play_btn">Easy</button>
-                <button id="diff-inst" text-align="center" type="button"
-                    class="btn btn-warning play_btn">Difficult</button>
+                <select name="numberGames" id="numberGames">
+                    <option value=5>5</option>
+                    <option value=6>6</option>
+                    <option value=7>7</option>
+                    <option value=8>8</option>
+                    <option value=9>9</option>
+                    <option value=10>10</option>
+                </select>
+            </div>
+            <div class="start-game-area-btn">
+                <button id="easy" text-align="center" type="button" class="btn btn-warning play_btn">Easy</button>
 
-            
+                <button id="difficult" text-align="center" type="button"
+                    class="btn btn-success play_btn">Difficult</button>
+            </div>
+
+
         </section>
 
 
-        <section id="step4" class="game-area d-none">
+        <!-- <section id="step4" class="game-area d-none">
 
             <div class="container">
 
-                <!-- This intro-message shows on initial load. It clears after game has started -->
+                 This intro-message shows on initial load. It clears after game has started>
 
-                <div id="easy" class="row center" style="display:none;">
-                    <button type="button" class="btn btn-primary col-sm btn-play" data-type="rock">Rock <i
-                            class="far fa-hand-rock"></i></button>
-                    <button type="button" class="btn btn-primary col-sm btn-play" data-type="paper">Paper <i
-                            class="far fa-hand-paper"></i></button>
-                    <button type="button" class="btn btn-primary col-sm btn-play" data-type="scissors">Scissors <i
-                            class="far fa-hand-scissors"></i></button>
-                </div>
+        div id="easy" class="row center" style="display:none;">
+            <button type="button" class="btn btn-primary col-sm btn-play" data-type="rock">Rock <i
+                    class="far fa-hand-rock"></i></button>
+            <button type="button" class="btn btn-primary col-sm btn-play" data-type="paper">Paper <i
+                    class="far fa-hand-paper"></i></button>
+            <button type="button" class="btn btn-primary col-sm btn-play" data-type="scissors">Scissors <i
+                    class="far fa-hand-scissors"></i></button>
+            </div> -->
 
-                <!-- These are the buttons which are used for the easy version of the game. -->
+        <!-- These are the buttons which are used for the easy version of the game. -->
 
-                <div id="difficult" class="row text-center" style="display:none;">
-                    <button type="button" class="btn btn-primary col-sm btn-play" data-type="spock">Spock <i
-                            class="far fa-hand-spock"></i></button>
-                    <button type="button" class="btn btn-primary col-sm btn-play" data-type="lizard">Lizard <i
-                            class="far fa-hand-lizard"></i></button>
-                </div>
-        </section>
+        <!-- <div id="difficult" class="row text-center" style="display:none;">
+            <button type="button" class="btn btn-primary col-sm btn-play" data-type="spock">Spock <i
+                    class="far fa-hand-spock"></i></button>
+            <button type="button" class="btn btn-primary col-sm btn-play" data-type="lizard">Lizard <i
+                    class="far fa-hand-lizard"></i></button>
+        </div>
+    </section> -->
         <!-- Additional buttons for the difficult version of game. -->
 
-        </div>
+        <!-- </div>
 
-        <h2>Scoreboard</h2>
+    <h2>Scoreboard</h2>
 
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">Score</th>
-                    <th scope="col">Last Move</th>
-                    <th scope="col">Last Result</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">You</th>
-                    <td id="userLastMove"></td>
-                    <td id="userScore">0</td>
-                </tr>
-                <tr>
-                    <th scope="row">Computer</th>
-                    <td id="computerLastMove"></td>
-                    <td id="computerScore">0</td>
-                </tr>
-            </tbody>
-        </table>
-
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Score</th>
+                <th scope="col">Last Move</th>
+                <th scope="col">Last Result</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">You</th>
+                <td id="userLastMove"></td>
+                <td id="userScore">0</td>
+            </tr>
+            <tr>
+                <th scope="row">Computer</th>
+                <td id="computerLastMove"></td>
+                <td id="computerScore">0</td>
+            </tr>
+        </tbody>
+    </table>
+ -->
 
         <!-- <div class="controls text-center">
                 <button id="reset" text-align="center" type="button" class="btn btn-warning play_btn"
@@ -186,13 +214,13 @@
  -->
         <!-- Scoreboard that become active after game starts -->
 
-        <div id="finish-text">
-            <p id="finish" class="bg-danger"></p>
-        </div>
+        <!-- <div id="finish-text">
+        <p id="finish" class="bg-danger"></p>
+    </div> -->
 
         <!-- Game over text that displays once the game is over. -->
 
-        </div>
+        <!-- </div>
     </section>
 
     <section id="finish" class="game-area d-none"></section>
@@ -218,13 +246,13 @@
             <button id="start" type="button" class="btn btn-success play_btn" ;>Start</button>
 
         </div>
-    </section>
-    <!-- Game controls - input easy/difficult and number of games. -->
+    </section> -->
+        <!-- Game controls - input easy/difficult and number of games. -->
 
-    <script src="assets/js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

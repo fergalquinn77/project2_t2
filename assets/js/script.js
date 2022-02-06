@@ -9,6 +9,15 @@ document.addEventListener("DOMContentLoaded", function () {
             runGame(gameType);
         });
     }
+
+    let game_settings = document.getElementsByClassName("btn-game-settings");
+
+    for (let game_setting of game_settings) {
+        game_setting.addEventListener("click", function () {
+            openSettings();
+        });
+    }
+
     document.getElementById("learn-more").onclick = learnMore;
     document.getElementById("learn-difficult").onclick = learnDifficult;
 
@@ -104,7 +113,6 @@ function runGame(gameType) {
 }
 
 function step2() {
-    let player = playerName.value;
     if (playerName.value.match(regEx) && playerName.value != null && playerName.value != undefined && playerName.value != "") {
         let player = playerName.value;
 
@@ -122,6 +130,13 @@ function learnMore() {
 function learnDifficult(){
     document.getElementById("learn-more-section").style.display = "none";
     document.getElementById("diff-instructions").style.display = "block";
+}
+
+function openSettings(){
+    document.getElementById("learn-more-section").style.display = "none";
+    document.getElementById("step2").style.display = "none";
+    document.getElementById("game-settings").style.display = "block";
+    console.log("settings");
 }
 
 function startGame() {
