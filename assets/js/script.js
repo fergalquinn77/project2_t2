@@ -144,21 +144,23 @@ function openSettings(){
 }
 
 function playEasy(){
+    let gameLength=document.getElementById("numberGames").value;
     document.getElementById("game-settings").style.display = "none";
     document.getElementById("game-inplay").style.display = "inline-block";
     document.getElementById("playerName").innerText = playerName.value;
-
-
+    document.getElementById("playerRemaining").innerText = `${gameLength}/${gameLength}`;
+    document.getElementById("computerRemaining").innerText = `${gameLength}/${gameLength}`;
 }
 
 
 function playDiff(){
+    let gameLength=document.getElementById("numberGames").value;
     document.getElementById("game-settings").style.display = "none";
     document.getElementById("game-inplay").style.display = "inline-block";
     document.getElementById("diff-buttons").style.display = "inline-block";
     document.getElementById("playerName").innerText = playerName.value;
-
-
+    document.getElementById("playerRemaining").innerText = `${gameLength}/${gameLength}`;
+    document.getElementById("computerRemaining").innerText = `${gameLength}/${gameLength}`;
 }
 
 function updateUserMoves(user, comp) {
