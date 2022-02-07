@@ -164,11 +164,10 @@ function incrementScore(winner) {
     if (winner == "user") {
         userScore++;
         document.getElementById("playerScore").innerText = userScore;
-        console.log(userScore);
+
     } else if (winner == "computer") {
         compScore++;
         document.getElementById("compScore").innerText = compScore;
-        console.log(compScore);
 
     }
     remainingMoves(userScore, compScore);
@@ -189,18 +188,24 @@ function remainingMoves(user, comp) {
         remain--;
         document.getElementById("playerRemaining").innerText = remain;
     } else {
+        remain--;
+        document.getElementById("playerRemaining").innerText = remain;
         if (user > comp) {
-            gameOver("user");
+            gameOver("Congrats! You Win");
         } else if (user < comp) {
-            gameOver("comp");
+            gameOver("I'm Afraid You Lost.");
         } else {
-            gamrOver("draw");
+            gameOver("It's A Draw");
         }
 
     }
 }
 
+function gameOver(winner){
+    document.getElementById("game-buttons").style.display="none";
+    document.getElementById("message").innerHTML=`Game Over. ${winner}`;
 
+}
 /* Checks if the game is over */
 
 
