@@ -9,12 +9,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    /* Event listeners for playing buttons e.g. Rock, Paper, Scissors */
+
     let game_settings = document.getElementsByClassName("btn-game-settings");
 
     for (let game_setting of game_settings) {
         game_setting.addEventListener("click", function () {
             openSettings();
         });
+        /* Event listeners for buttons relating to game settings */
     }
 
     document.getElementById("learn-more").onclick = learnMore;
@@ -24,12 +27,13 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("reset").onclick = gameReset;
     document.getElementById("newGame").onclick = newGame;
 
+    /* Event listeners for balance of buttons used */
 
 });
 
-/* Add event listeners for all buttons */
-const easy_moves = ["rock", "paper", "scissors"];
-const diff_moves = ["rock", "paper", "scissors", "spock", "lizard"];
+
+const easy_moves = ["rock", "paper", "scissors"]; //Easy Move Game
+const diff_moves = ["rock", "paper", "scissors", "spock", "lizard"]; //Diff move game
 const playerName = document.getElementById("player-name");
 const regEx = /^(?! )[A-Za-z\s\xC0-\uFFFF]*$/;
 var moves = [];
@@ -45,15 +49,21 @@ function step2() {
     document.getElementById("step2").style.display = "block";
 }
 
+/* Taking data from landing page and moving to step 2 */
+
 function learnMore() {
     document.getElementById("step2").style.display = "none";
     document.getElementById("learn-more-section").style.display = "block";
 }
 
+/* Go to the learn more page */
+
 function learnDifficult() {
     document.getElementById("learn-more-section").style.display = "none";
     document.getElementById("diff-instructions").style.display = "block";
 }
+
+/* Go to learn about difficult version */
 
 function openSettings() {
     document.getElementById("learn-more-section").style.display = "none";
@@ -61,6 +71,8 @@ function openSettings() {
     document.getElementById("diff-instructions").style.display = "none";
     document.getElementById("game-settings").style.display = "block";
 }
+
+/* Open game settings page */
 
 function playEasy() {
     let gameLength = document.getElementById("numberGames").value;
@@ -71,6 +83,7 @@ function playEasy() {
     moves = easy_moves;
 }
 
+/* Open game in easy version */
 
 function playDiff() {
     let gameLength = document.getElementById("numberGames").value;
@@ -82,6 +95,7 @@ function playDiff() {
     moves = diff_moves;
 }
 
+/* Open game in difficult version */
 
 function runGame(gameType) {
 
@@ -149,10 +163,14 @@ function runGame(gameType) {
     }
 }
 
+/* Run game function */
+
 function updateUserMoves(user, comp) {
     document.getElementById("userMove").innerText = user;
     document.getElementById("compMove").innerText = comp;
 }
+
+/* Update user moves in scoreboard */
 
 function incrementScore(winner) {
     let userScore = parseInt(document.getElementById("playerScore").innerText);
@@ -169,14 +187,9 @@ function incrementScore(winner) {
     remainingMoves(userScore, compScore);
 }
 
-/* Adjust scoreboard for new scores and check whether game is finished */
+/* Increment scores after move */
 
-function checkScore(userScore, compScore) {
-    let finish = document.getElementById("numberGames").value;
-    if (userScore == finish || compScore == finish) {
-        endGame(userScore, compScore);
-    }
-}
+/* Adjust scoreboard for new scores and check whether game is finished */
 
 function remainingMoves(user, comp) {
     let remain = parseInt(document.getElementById("playerRemaining").innerText);
@@ -197,39 +210,41 @@ function remainingMoves(user, comp) {
     }
 }
 
-function gameOver(winner){
-    document.getElementById("game-buttons").style.display="none";
-    document.getElementById("message").innerHTML=`Game Over ${playerName.value}. ${winner}`;
+/* Update remaining moves and check whether game is over */
+
+function gameOver(winner) {
+    document.getElementById("game-buttons").style.display = "none";
+    document.getElementById("message").innerHTML = `Game Over ${playerName.value}. ${winner}`;
 
 }
 
-function gameReset(){
-    document.getElementById("compScore").innerText =0;
-    document.getElementById("playerScore").innerText =0;
+/* Execute if game is over */
+
+function gameReset() {
+    document.getElementById("compScore").innerText = 0;
+    document.getElementById("playerScore").innerText = 0;
 }
 
+/* Reset Scores */
 
 
 function newGame() {
-    
+
     gameReset();
-    if (moves==easy_moves){
+    if (moves == easy_moves) {
         playEasy();
-        
-        document.getElementById("message").innerHTML="Let's Play";
-        document.getElementById("game-buttons").style.display="inline-block";
-        document.getElementById("game-buttons").style.width="inherit";
 
-    }
-    else{
+        document.getElementById("message").innerHTML = "Let's Play";
+        document.getElementById("game-buttons").style.display = "inline-block";
+        document.getElementById("game-buttons").style.width = "inherit";
+
+    } else {
         playDiff();
-        document.getElementById("message").innerHTML="Let's Play";
-        document.getElementById("game-buttons").style.display="inline-block";
-        document.getElementById("game-buttons").style.width="inherit";
+        document.getElementById("message").innerHTML = "Let's Play";
+        document.getElementById("game-buttons").style.display = "inline-block";
+        document.getElementById("game-buttons").style.width = "inherit";
         document.getElementById("diff-buttons").style.display = "inline-block";
-
-
     }
-
-
 }
+
+/* Start a new game */
