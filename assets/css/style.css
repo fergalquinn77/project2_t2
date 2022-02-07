@@ -28,13 +28,14 @@ h1 {
   opacity: 0.95;
   margin: 0;
   height: 700px;
-  width: 900px;
+  width: 80%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 30px;
   z-index: -1;
+  text-align: center;
 }
 
 .logo {
@@ -50,10 +51,16 @@ h1 {
   text-align: center;
 }
 
+#letsPlay {
+  margin-top: 20px;
+  text-align: center;
+}
+
 .main-message {
   margin-top: 60px;
   text-align: center;
 }
+
 
 .start-input-name {
   text-align: center;
@@ -116,9 +123,6 @@ h1 {
   text-align: center;
 }
 
-#game-inplay{
-  width: inherit;
-}
 
 #game-buttons{
   text-align: center;
@@ -134,8 +138,9 @@ display: inline-block;
   margin: 10px;
 }
 
+
 #scoreboard {
-  width:50%;
+  width:60vw;
   text-align: center;
   margin: 0 auto;
   
@@ -148,12 +153,22 @@ display: inline-block;
 
 /* Media query to add a breakpoint at 800px: */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 
   .left,
   .main,
   .right {
     width: 100%;
+  }
+
+  .header-title {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .game-area {
+    height: 800px;
+    width: 90%;
   }
 
   .embed-youtube {
@@ -163,8 +178,16 @@ display: inline-block;
     height: 0;
     overflow: hidden;
     width: 100%;
-    margin: 0 auto;
+    margin: 5 auto;
 
+  }
+
+  #scoreboard{
+    width:90vw;
+  }
+
+  .btn{
+    margin-top: 5px;
   }
 
   .embed-youtube iframe,
