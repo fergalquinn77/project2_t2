@@ -21,11 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("learn-difficult").onclick = learnDifficult;
     document.getElementById("easy").onclick = playEasy;
     document.getElementById("difficult").onclick = playDiff;
-
-    document.getElementById("start").onclick = startGame;
     document.getElementById("reset").onclick = gameReset;
-    document.getElementById("easy-inst").onclick = easyInst;
-    document.getElementById("diff-inst").onclick = diffInst;
     document.getElementById("newGame").onclick = newGame;
 
 
@@ -203,17 +199,37 @@ function remainingMoves(user, comp) {
 
 function gameOver(winner){
     document.getElementById("game-buttons").style.display="none";
-    document.getElementById("message").innerHTML=`Game Over. ${winner}`;
+    document.getElementById("message").innerHTML=`Game Over ${playerName.value}. ${winner}`;
 
 }
-/* Checks if the game is over */
 
+function gameReset(){
+    document.getElementById("compScore").innerText =0;
+    document.getElementById("playerScore").innerText =0;
+}
 
-
-/* Find out who is the winner and update the scoreboard to indicate who it is. 
-Take away playing keys so the user cannot continue to play */
 
 
 function newGame() {
-    location.reload();
+    
+    gameReset();
+    if (moves==easy_moves){
+        playEasy();
+        
+        document.getElementById("message").innerHTML="Let's Play";
+        document.getElementById("game-buttons").style.display="inline-block";
+        document.getElementById("game-buttons").style.width="inherit";
+
+    }
+    else{
+        playDiff();
+        document.getElementById("message").innerHTML="Let's Play";
+        document.getElementById("game-buttons").style.display="inline-block";
+        document.getElementById("game-buttons").style.width="inherit";
+        document.getElementById("diff-buttons").style.display = "inline-block";
+
+
+    }
+
+
 }

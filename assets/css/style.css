@@ -146,6 +146,11 @@ display: inline-block;
   
 }
 
+#reset-newGame{
+  text-align: center;
+  margin-top:10px;
+}
+
 /* .flex-container {
   display: flex;
 }
