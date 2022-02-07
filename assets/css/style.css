@@ -87,11 +87,6 @@ h1 {
   width: 150px;
 }
 
-#sheldon-title {
-  margin-top: 30px;
-  text-align: center;
-}
-
 .embed-youtube {
   margin-top: 0px;
   text-align: center;
@@ -149,81 +144,6 @@ display: inline-block;
 #reset-newGame{
   text-align: center;
   margin-top:10px;
-}
-
-/* .flex-container {
-  display: flex;
-}
-
-.flex-container ul {
-  list-style-type: none;
-}
-
-#instructions{
-  margin: 0px 10px 0px 10px;
-}
-#intro {
-  background-color: #bd1515;
-  color: white;
-  font-size: 1.25em;
-}
-
-#intro p {
-  margin: 0;
-}
-
-#intro-message .btn {
-  display: inline-block;
-  margin: 10px;
-}
-
-
-
-
-#video {
-  align-items: center;
-}
-
-.btn {
-  margin: 5px;
-  text-align: center;
-}
-
-#reset {
-  text-align: center;
-}
-
-#startControls {
-  background-color: #bd1515;
-  color: white;
-  font-size: 1.25em;
-  text-align: center;
-}
-
-#scoreboard {
-  width: 350px;
-  background-color: #bd1515;
-  color: white;
-  border: 5px solid green;
-  padding: 40px;
-  margin: 0px auto;
-  justify-content: center;
-}
-
-.play_btn{
-  width: 150px;
-}
-
-#difficulty {
-  background-color: lightgray;
-}
-
-#numberGames {
-  background-color: lightgray;
-}
-
-#controls p {
-  margin: 10px;
 }
 
 /* Media query to add a breakpoint at 800px: */
