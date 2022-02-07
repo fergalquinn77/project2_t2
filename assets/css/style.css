@@ -82,7 +82,7 @@ h1 {
   position: absolute;
   bottom:30px;
   left:50%;
-  transform: left: 50%; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
 
 .step-forward {
@@ -178,7 +178,7 @@ display: inline-block;
     height: 0;
     overflow: hidden;
     width: 100%;
-    margin: 5 auto;
+    margin: 0 auto;
 
   }
 
@@ -202,4 +202,3 @@ display: inline-block;
   }
 }
 
-*/
