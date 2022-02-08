@@ -1,4 +1,9 @@
 let gameType, win, lose;
+const easy_moves = ["rock", "paper", "scissors"]; //Easy Move Game
+const diff_moves = ["rock", "paper", "scissors", "spock", "lizard"]; //Diff move game
+const playerName = document.getElementById("player-name");
+const regEx = /^(?! )[A-Za-z\s\xC0-\uFFFF]*$/;
+var moves = [];
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -11,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    /* Event listeners for playing buttons e.g. Rock, Paper, Scissors */
+    // Event listeners for playing buttons e.g. Rock, Paper, Scissors 
 
     let game_settings = document.getElementsByClassName("btn-game-settings");
 
@@ -19,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         game_setting.addEventListener("click", function () {
             openSettings();
         });
-        /* Event listeners for buttons relating to game settings */
+        // Event listeners for buttons relating to game settings
     }
 
     document.getElementById("learn-more").onclick = learnMore;
@@ -29,19 +34,12 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("reset").onclick = gameReset;
     document.getElementById("newGame").onclick = newGame;
 
-    /* Event listeners for balance of buttons used */
+    // Event listeners for balance of buttons used
 
 });
 
-
-const easy_moves = ["rock", "paper", "scissors"]; //Easy Move Game
-const diff_moves = ["rock", "paper", "scissors", "spock", "lizard"]; //Diff move game
-const playerName = document.getElementById("player-name");
-const regEx = /^(?! )[A-Za-z\s\xC0-\uFFFF]*$/;
-var moves = [];
-
-
 function step2() {
+    //Move playing from main landing page and then moving to step 2
     if (playerName.value.match(regEx) && playerName.value != null && playerName.value != undefined && playerName.value != "") {
         let player = playerName.value;
 
@@ -51,32 +49,36 @@ function step2() {
     document.getElementById("step2").style.display = "block";
 }
 
-/* Taking data from landing page and moving to step 2 */
+
 
 function learnMore() {
+    // Display learn more page
     document.getElementById("step2").style.display = "none";
     document.getElementById("learn-more-section").style.display = "block";
 }
 
-/* Go to the learn more page */
+
 
 function learnDifficult() {
+    // Display learn difficult version 
     document.getElementById("learn-more-section").style.display = "none";
     document.getElementById("diff-instructions").style.display = "block";
 }
 
-/* Go to learn about difficult version */
+
 
 function openSettings() {
+    // Open game settings page
     document.getElementById("learn-more-section").style.display = "none";
     document.getElementById("step2").style.display = "none";
     document.getElementById("diff-instructions").style.display = "none";
     document.getElementById("game-settings").style.display = "block";
 }
 
-/* Open game settings page */
+
 
 function playEasy() {
+    // Open game in easy version
     let gameLength = document.getElementById("numberGames").value;
     document.getElementById("game-settings").style.display = "none";
     document.getElementById("game-inplay").style.display = "inline-block";
@@ -85,9 +87,10 @@ function playEasy() {
     moves = easy_moves;
 }
 
-/* Open game in easy version */
+
 
 function playDiff() {
+    // Open game in difficult version
     let gameLength = document.getElementById("numberGames").value;
     document.getElementById("game-settings").style.display = "none";
     document.getElementById("game-inplay").style.display = "inline-block";
@@ -97,9 +100,9 @@ function playDiff() {
     moves = diff_moves;
 }
 
-/* Open game in difficult version */
 
 function runGame(gameType) {
+    //Run Game function - used for each player move
 
     let computerMove = moves[Math.floor(Math.random() * moves.length)];
 
@@ -165,16 +168,18 @@ function runGame(gameType) {
     }
 }
 
-/* Run game function */
+
 
 function updateUserMoves(user, comp) {
+    // Update user moves in scoreboard 
     document.getElementById("userMove").innerText = user;
     document.getElementById("compMove").innerText = comp;
 }
 
-/* Update user moves in scoreboard */
+
 
 function incrementScore(winner) {
+    // Increment scores after move
     let userScore = parseInt(document.getElementById("playerScore").innerText);
     let compScore = parseInt(document.getElementById("compScore").innerText);
     if (winner == "user") {
@@ -189,11 +194,10 @@ function incrementScore(winner) {
     remainingMoves(userScore, compScore);
 }
 
-/* Increment scores after move */
 
-/* Adjust scoreboard for new scores and check whether game is finished */
 
 function remainingMoves(user, comp) {
+    // Update remaining moves and check whether game is over 
     let remain = parseInt(document.getElementById("playerRemaining").innerText);
     if (remain > 1) {
         remain--;
@@ -212,26 +216,28 @@ function remainingMoves(user, comp) {
     }
 }
 
-/* Update remaining moves and check whether game is over */
+
 
 function gameOver(winner) {
+    // Execute if game is over
     document.getElementById("game-buttons").style.display = "none";
     document.getElementById("message").innerHTML = `Game Over ${playerName.value}. ${winner}`;
 
 }
 
-/* Execute if game is over */
+
 
 function gameReset() {
+    // Reset Scores
     document.getElementById("compScore").innerText = 0;
     document.getElementById("playerScore").innerText = 0;
 }
 
-/* Reset Scores */
+
 
 
 function newGame() {
-
+    // Start a new game 
     gameReset();
     if (moves == easy_moves) {
         playEasy();
@@ -248,5 +254,3 @@ function newGame() {
         document.getElementById("diff-buttons").style.display = "inline-block";
     }
 }
-
-/* Start a new game */

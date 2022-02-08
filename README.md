@@ -1,8 +1,14 @@
-# Rock, Paper, Scissors
+# Rock, Paper, Scissors - Project 2 - JavaScript
 
 This website is deisgned to allow users play the traditional Rock, Paper, Scissors game against a computer. Users will have the option to play the traditional game with 3 choices or extend the game to the more difficult 5 choice game which has two further options of Lizard and Spock.
 
 ![homepage](assets/images/game-homepage.jpg)
+
+## Objective
+
+## User Experience
+
+
 
 ## Features
 
@@ -16,6 +22,9 @@ This website is deisgned to allow users play the traditional Rock, Paper, Scisso
     The navigation is clear and simple. It displays the logo for Kennedys on the left and the 3 sections to the right (or under the logo in mobile view). 
 - [Click here for the wireframe](assets/images/wireframe-game.jpg)
 
+## Future Features
+
+
 
 ## Technologies Used
 
@@ -28,7 +37,7 @@ Languages used:
 ## Testing
 
 - I tested that the page works in the different browsers: [Chrome](assets/images/chrome-testing-game.jpg), [Safari](assets/images/safari-testing-game.jpg), [Firefox](assets/images/firefox-testing-game.jpg).
-- I confirmed that this project is [responsive](assets/images/responsive-design.jpg), looks good and functions on all standard screen sizes using devtools device toolbar.
+- I confirmed that this project is [responsive](assets/images/game-responsive-design.jpg), looks good and functions on all standard screen sizes using devtools device toolbar.
 - I confirmed all buttons are working right, executing the correct functions and displaying results correctly on the screen.
 
 ## Validator Testing
@@ -41,6 +50,7 @@ Languages used:
 
 - JavaScript
     - No errors were found when passing through the [JSHint Validator](https://jshint.com/). [Click here](assets/images/game-java-check.jpg) 
+
 - Accessibility
     - Confirmed that font choice was easy to read and accessible by running it through lighthouse in devtools. 
 
@@ -79,3 +89,6 @@ Scroll back down through the page to locate the now [published site link](https:
 ### Acknowledgements
 
 - My mentor Chris Quinn was a great help throughout the project!. I would also like to thank Ger, Jo, Sean and John who are part of the Code Institute tutoring team.
+
+### Personal Development
+
