@@ -172,6 +172,14 @@ h1 {
       font-size: 14px;
     }
 
+    .start-game-area-btn {
+
+      position:inherit;
+      transform: none;
+      margin-top:2rem;
+      
+    }
+
     .logo {
       margin-top: 20px;
       max-width: 100px;
@@ -183,7 +191,9 @@ h1 {
     }
 
     .game-area {
-      height: 80vh;
+      height: auto;
+      padding-top: 2rem;
+      padding-bottom: 4rem;
       width: 90%;
     }
 
