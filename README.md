@@ -2,13 +2,37 @@
 
 This website is deisgned to allow users play the traditional Rock, Paper, Scissors game against a computer. Users will have the option to play the traditional game with 3 choices or extend the game to the more difficult 5 choice game which has two further options of Lizard and Spock.
 
-![homepage](assets/images/game-homepage.jpg)
+![homepage](assets/images/game-responsive-design.jpg)
+
+# Contents
 
 ## Objective
 
+For my second project, I intend to create a the traditional, well-known, Rock-Scissors-Paper game. There will also be an option to play a more challenging version of the game which includes the Lizard & Spock moves. The main objective is to demonstrate competency in HTML, CSS and JavaScript. Additionally, the project will demonstrate thorough testing as detailed in the Testing Section.
+
 ## User Experience
 
+### Design
 
+- Colour Scheme/Background
+
+    - There is a light gray used for the game area with a very slight opacity. The text color is black which provides good contrast to the light gray background. 
+
+- Typograpghy
+
+    - The Montserrat font is the main font used for the website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Montserrat is a clean font used frequently in programming, so it is both attractive and appropriate.
+
+- Imagery
+
+    - In keeping with game name, a photo of Rock, Paper, Scissors sets the background for the game area.
+
+### Wireframes
+
+- [Homepage Wireframe](assets/images/desktop-wireframe.png)
+
+- [Mobile Wireframe](assets/images/mobile-wireframe.png)
+
+[Back to top](<#contents>)
 
 ## Features
 
@@ -22,9 +46,12 @@ This website is deisgned to allow users play the traditional Rock, Paper, Scisso
     The navigation is clear and simple. It displays the logo for Kennedys on the left and the 3 sections to the right (or under the logo in mobile view). 
 - [Click here for the wireframe](assets/images/wireframe-game.jpg)
 
+[Back to top](<#contents>)
+
 ## Future Features
 
 
+[Back to top](<#contents>)
 
 ## Technologies Used
 
@@ -39,6 +66,8 @@ Languages used:
 - I tested that the page works in the different browsers: [Chrome](assets/images/chrome-testing-game.jpg), [Safari](assets/images/safari-testing-game.jpg), [Firefox](assets/images/firefox-testing-game.jpg).
 - I confirmed that this project is [responsive](assets/images/game-responsive-design.jpg), looks good and functions on all standard screen sizes using devtools device toolbar.
 - I confirmed all buttons are working right, executing the correct functions and displaying results correctly on the screen.
+
+[Back to top](<#contents>)
 
 ## Validator Testing
 
@@ -56,9 +85,11 @@ Languages used:
 
  ![Lighthouse Report](assets/images/lighthouse-report-game.jpg)   
 
- ## Deployment
+[Back to top](<#contents>)
 
- ### Forking Instructions
+## Deployment
+
+### Forking Instructions
 
  To fork this repo - go to the [Github page](https://github.com/fergalquinn77/project2_t2.git) and click the fork button on the top right.
 
@@ -76,6 +107,8 @@ Languages used:
 The page will automatically refresh.
 Scroll back down through the page to locate the now [published site link](https://fergalquinn77.github.io/project2_t2/) in the "GitHub Pages" section.
 
+[Back to top](<#contents>)
+
 ## Credits
 
 ### Content & Media
@@ -92,3 +125,4 @@ Scroll back down through the page to locate the now [published site link](https:
 
 ### Personal Development
 
+[Back to top](<#contents>)
