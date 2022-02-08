@@ -1,3 +1,5 @@
+let gameType, win, lose;
+
 document.addEventListener("DOMContentLoaded", function () {
 
     let buttons = document.getElementsByClassName("btn-play-game");
