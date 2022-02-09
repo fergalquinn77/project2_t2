@@ -63,11 +63,27 @@ For my second project, I intend to create a the traditional, well-known, Rock-Sc
 
 ## Technologies Used
 
-Languages used:
+### Languages used:
 
 - HTML
 - CSS
 - Javascript
+
+### Frameworks, Libraries & Programs Used
+
+1. Bootstrap
+    - Bootstrap was used to assist the styling of buttons on the website.
+2. Google Fonts
+    - Google fonts were used to import the 'Montserrat font' font into the style.css file which is used on all pages throughout the project.
+3. Font Awesome
+    - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
+4. Git
+    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+5. Github
+    - GitHub is used to store the projects code after being pushed from Git.
+6. Balsamiq
+    - Balsamiq was used to create the [wireframes](<#wireframes>) during the design process.
+
 
 ## Testing
 
