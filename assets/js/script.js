@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-function step2() {
+function toWelcome() {
     //Move playing from main landing page and then moving to step 2
     if (playerName.value.match(regEx) && playerName.value != null && playerName.value != undefined && playerName.value != "") {
         let player = playerName.value;
@@ -47,13 +47,13 @@ function step2() {
         document.getElementById("question").innerText = `Hi ${player}, do you know how to play`;
     }
     document.getElementById("intro").style.display = "none";
-    document.getElementById("step2").style.display = "block";
+    document.getElementById("toWelcome").style.display = "block";
 }
 
 
 function learnMore() {
     // Display learn more page
-    document.getElementById("step2").style.display = "none";
+    document.getElementById("toWelcome").style.display = "none";
     document.getElementById("learn-more-section").style.display = "block";
 }
 
@@ -68,7 +68,7 @@ function learnDifficult() {
 function openSettings() {
     // Open game settings page
     document.getElementById("learn-more-section").style.display = "none";
-    document.getElementById("step2").style.display = "none";
+    document.getElementById("toWelcome").style.display = "none";
     document.getElementById("diff-instructions").style.display = "none";
     document.getElementById("game-settings").style.display = "block";
 }
