@@ -6,6 +6,14 @@ This website is deisgned to allow users play the traditional Rock, Paper, Scisso
 
 # Contents
 
+* [**Objective**](<#objective>)
+* [**User Experience UX**](<#user-experience>)
+    * [Design](<#design>)
+    * [Wireframes](<#wireframes>)
+* [**Features**](<#features>)
+* [**Future Features](<#Future-Features>)
+
+
 ## Objective
 
 For my second project, I intend to create a the traditional, well-known, Rock-Scissors-Paper game. There will also be an option to play a more challenging version of the game which includes the Lizard & Spock moves. The main objective is to demonstrate competency in HTML, CSS and JavaScript. Additionally, the project will demonstrate thorough testing as detailed in the Testing Section.
