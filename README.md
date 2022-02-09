@@ -11,7 +11,10 @@ This website is deisgned to allow users play the traditional Rock, Paper, Scisso
     * [Design](<#design>)
     * [Wireframes](<#wireframes>)
 * [**Features**](<#features>)
-* [**Future Features](<#Future-Features>)
+* [**Future Features**](<#future-features>)
+* [**Technologies Used**](<#technologies-used>)
+    * [Languages Used](<#languages-used>)
+    * [Frameworks, Libraries & Programs Used](<#frameworks,-libraries-&-programs-used>)
 
 
 ## Objective
@@ -63,7 +66,7 @@ For my second project, I intend to create a the traditional, well-known, Rock-Sc
 
 ## Technologies Used
 
-### Languages used:
+### Languages Used
 
 - HTML
 - CSS
@@ -87,13 +90,7 @@ For my second project, I intend to create a the traditional, well-known, Rock-Sc
 
 ## Testing
 
-- I tested that the page works in the different browsers: [Chrome](assets/images/chrome-testing-game.jpg), [Safari](assets/images/safari-testing-game.jpg), [Firefox](assets/images/firefox-testing-game.jpg).
-- I confirmed that this project is [responsive](assets/images/game-responsive-design.jpg), looks good and functions on all standard screen sizes using devtools device toolbar.
-- I confirmed all buttons are working right, executing the correct functions and displaying results correctly on the screen.
-
-[Back to top](<#contents>)
-
-## Validator Testing
+### Validator Testing
 
 - HTML
     - No errors were found when passing through the official [W3C validator](https://validator.w3.org/#validate_by_input). Here is the result - [Homepage](assets/images/game-html-check.jpg). 
@@ -109,27 +106,61 @@ For my second project, I intend to create a the traditional, well-known, Rock-Sc
 
  ![Lighthouse Report](assets/images/lighthouse-report-game.jpg)   
 
+### Further Testing
+
+- I tested that the page works in the different browsers: [Chrome](assets/images/game-chrome-display.jpg), [Safari](assets/images/game-safari-display.jpg), [Firefox](assets/images/firefox-testing-game.jpg).
+- I confirmed that this project is [responsive](assets/images/game-responsive-design.jpg), looks good and functions on all standard screen sizes using devtools device toolbar.
+- I confirmed all buttons are working right, executing the correct functions and displaying results correctly on the screen.
+
 [Back to top](<#contents>)
+
 
 ## Deployment
 
-### Forking Instructions
+### Guthub Pages
 
- To fork this repo - go to the [Github page](https://github.com/fergalquinn77/project2_t2.git) and click the fork button on the top right.
+The project was deployed to GitHub Pages using the following steps...
 
- ### Local deployment (Gitpod)
+1. Log in to GitHub and locate the GitHub Repository
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+4. Under "Source", click the dropdown called "None" and select "Master Branch".
+5. The page will automatically refresh.
+6. Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
 
- The project was edited on [Gitpod](https://fergalquinn77.github.io/project2_t2/). Edits were then regularily pushed to Github.
-   
- ### GitHub Pages
+ ### Forking the GitHub Repository
 
- The project was deployed on GitHub Pages using the following steps:
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/fergalquinn77/project2_t2.git)
-2. At the top of the Repository - click  "Settings" Button on the menu.
-3. Under "Source", click the dropdown called "None" and select "Main Branch".
-The page will automatically refresh.
-Scroll back down through the page to locate the now [published site link](https://fergalquinn77.github.io/project2_t2/) in the "GitHub Pages" section.
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/fergalquinn77/project2_t2.git)
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
+
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```
+
+7. Press Enter. Your local clone will be created.
+
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+```
+
+Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
 [Back to top](<#contents>)
 
