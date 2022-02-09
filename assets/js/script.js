@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+
 function step2() {
     //Move playing from main landing page and then moving to step 2
     if (playerName.value.match(regEx) && playerName.value != null && playerName.value != undefined && playerName.value != "") {
@@ -50,7 +51,6 @@ function step2() {
 }
 
 
-
 function learnMore() {
     // Display learn more page
     document.getElementById("step2").style.display = "none";
@@ -58,13 +58,11 @@ function learnMore() {
 }
 
 
-
 function learnDifficult() {
     // Display learn difficult version 
     document.getElementById("learn-more-section").style.display = "none";
     document.getElementById("diff-instructions").style.display = "block";
 }
-
 
 
 function openSettings() {
@@ -76,7 +74,6 @@ function openSettings() {
 }
 
 
-
 function playEasy() {
     // Open game in easy version
     let gameLength = document.getElementById("numberGames").value;
@@ -86,7 +83,6 @@ function playEasy() {
     document.getElementById("playerRemaining").innerText = gameLength;
     moves = easy_moves;
 }
-
 
 
 function playDiff() {
@@ -172,13 +168,11 @@ function runGame(gameType) {
 }
 
 
-
 function updateUserMoves(user, comp) {
     // Update user moves in scoreboard 
     document.getElementById("userMove").innerText = user;
     document.getElementById("compMove").innerText = comp;
 }
-
 
 
 function incrementScore(winner) {
@@ -196,7 +190,6 @@ function incrementScore(winner) {
     }
     remainingMoves(userScore, compScore);
 }
-
 
 
 function remainingMoves(user, comp) {
@@ -220,7 +213,6 @@ function remainingMoves(user, comp) {
 }
 
 
-
 function gameOver(winner) {
     // Execute if game is over
     document.getElementById("game-buttons").style.display = "none";
@@ -229,14 +221,11 @@ function gameOver(winner) {
 }
 
 
-
 function gameReset() {
     // Reset Scores
     document.getElementById("compScore").innerText = 0;
     document.getElementById("playerScore").innerText = 0;
 }
-
-
 
 
 function newGame() {
