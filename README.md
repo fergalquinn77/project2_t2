@@ -15,6 +15,17 @@ This website is deisgned to allow users play the traditional Rock, Paper, Scisso
 * [**Technologies Used**](<#technologies-used>)
     * [Languages Used](<#languages-used>)
     * [Frameworks, Libraries & Programs Used](<#frameworks,-libraries-&-programs-used>)
+* [**Tesing**](<#testing>)
+    * [Validator Testing](<#validator-testing>)
+    * [Other Testing](<#further-testing>)
+* [**Deployment**](<#deployment>)
+    * [Github Pages](<#github-pages>)
+    * [Forking the GitHub Repository](<#forking-the-github-repository>)
+    * [Making a Local Clone](<#making-a-local-clone>)
+* [**Credits**](<#credits>)
+    * [Content & Media](<#content-&-media>)
+    * [Acknowledgements](<#acknowledgements>)
+    * [Personal Development](<personal-development>)
 
 
 ## Objective
@@ -47,19 +58,29 @@ For my second project, I intend to create a the traditional, well-known, Rock-Sc
 
 ## Features
 
-- Game settings
-    - On the homepage, there is a [game settings section](assets/images/game-settings.jpg) which allows use to choose Easy or Hard and the number of games they wish to play. 
+- Homepage
+    - In order to start the game, the user is asked for their nameon the [homepage](assets/images/game-homepage.jpg). 
+- Instructions on how to play
+    - After entering their name, the user is asked whether they would like to [learn about the game or play now](assets/images/step2.jpg). If they would like instructions, they are firstly presented with those relating to the [standard game](assets/images/learn-more.jpg) and then those relating to the [difficult version](assets/images/learn-difficult.JPG)
+    
 - Playing the game
-    - When the user is playing the standard game, the user is given 3 options to play each move - namely, [Rock, Paper or Scissors](assets/images/game-play.jpg). If they choose the difficult version, they are given two further options - namely, [Lizard and Spock](assets/images/game-play-difficult.jpg).
-    - When the user makes a move, the computer then makes a random move. Both moves are recorded in the [scoreboard section](assets/images/scoreboard.jpg).
+    - When the user selects 'Play Now', they are brought to a [game settings page](assets/images/game-settings-page.jpg), where they can choose the number of moves and then the level of difficulty.
+    - Once the users [chooses a move](assets/images/game-playing-area.jpg), the computer randomly chooses a moves and both moves are recorded on the scoreboard.
+
 - The Scoreboard
-    - There is a scoreboard that records the score of the game. The game finishes when the 
-    The navigation is clear and simple. It displays the logo for Kennedys on the left and the 3 sections to the right (or under the logo in mobile view). 
-- [Click here for the wireframe](assets/images/wireframe-game.jpg)
+    - There is a scoreboard that records the score of the game. When the game finsihes, the user is displayed with a [message](assets/images/game-over.jpg) indicating who won the game. 
 
 [Back to top](<#contents>)
 
 ## Future Features
+
+- Sound
+
+    - I would like to sound to the game to improve the user experience.
+
+- Delay
+
+    - I would like to incorporate a delay in the computers move, to make it more realistic. For instance, the user selects his move, then the computer moves about a second later. I feel this would improve the user experience.
 
 
 [Back to top](<#contents>)
@@ -117,7 +138,7 @@ For my second project, I intend to create a the traditional, well-known, Rock-Sc
 
 ## Deployment
 
-### Guthub Pages
+### Github Pages
 
 The project was deployed to GitHub Pages using the following steps...
 
@@ -179,5 +200,9 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 - My mentor Chris Quinn was a great help throughout the project!. I would also like to thank Ger, Jo, Sean and John who are part of the Code Institute tutoring team.
 
 ### Personal Development
+
+- This project took three attempts. My first attempt really (on a [separate repo](https://github.com/fergalquinn77/project2.git)) was an excercise in understanding JavaScript and how it fits in with the DOM. I felt it was best to start the project again with a [new repo](https://github.com/fergalquinn77/project2_t2.git) which functionally worked fine but I felt it had a poor user experience.
+
+- I designed up a new wireframe and went for take 3. 
 
 [Back to top](<#contents>)

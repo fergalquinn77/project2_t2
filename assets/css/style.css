@@ -23,7 +23,9 @@ h1 {
   font-size: 24px;
 }
 
+
 .game-area {
+  /* style the main game area */
   background-color: lightgrey;
   opacity: 0.95;
   margin: 0;
@@ -156,17 +158,10 @@ h1 {
 
 @media screen and (max-width: 800px) {
 
-  /* .left,
-  .main,
-  .right {
-    width: 100%; */
-
-
 
     h1 {
       font-size: 18px
     }
-
 
     p, strong{
       font-size: 14px;
