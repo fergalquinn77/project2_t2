@@ -201,8 +201,10 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Personal Development
 
-- This project took three attempts. My first attempt really (on a [separate repo](https://github.com/fergalquinn77/project2.git)) was an excercise in understanding JavaScript and how it fits in with the DOM. I felt it was best to start the project again with a [new repo](https://github.com/fergalquinn77/project2_t2.git) which functionally worked fine but I felt it had a poor user experience.
+- This project took three attempts. My first attempt (on a [separate repo](https://github.com/fergalquinn77/project2.git)) my my first solo Javascript project was an excercise in understanding JavaScript and how it fits in with the DOM. It had alot of changes and commit's so I felt it was best to start the project again with a [new repo](https://github.com/fergalquinn77/project2_t2.git). The new repo project had functionally worked fine but I felt it had a poor user experience - especially in [desktop view](assets/images/homepage-game.jpg). I should have given more thought to the layout and game-flow. The [previous wireframe](assets/images/wireframe-game.jpg).
 
-- I designed up a new wireframe and went for take 3. 
+- I felt it was best to relook at the website design. I redesigned the website using a more thought out [wireframe](<#wireframes>). The new design required much more work on Html/CSS which I feel paid off in many ways in the end. The website delivers a better UX and I learnt a huge amount about HTML/CSS areas I needed to improve my knowledge on, like positioning and display of elements. The tutors were a great help here.
+
+- While the final project still requires work (as covered in the [Future Features](<#future-features>)) section, I feel the project was a great learning experience!  
 
 [Back to top](<#contents>)

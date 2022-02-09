@@ -102,7 +102,10 @@ function playDiff() {
 
 
 function runGame(gameType) {
-    //Run Game function - used for each player move
+    /* Run Game function - used for each player move. It takes the users
+    move from a button click, then generates a random move for the computer.
+    It then checks whether the users wins/draws/loses. It then passes both moves
+    to the upadteUserMoves function which updates the scoreboard */ 
 
     let computerMove = moves[Math.floor(Math.random() * moves.length)];
 
