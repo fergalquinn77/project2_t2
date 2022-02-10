@@ -1,6 +1,6 @@
 # Rock, Paper, Scissors - Project 2 - JavaScript
 
-This website is deisgned to allow users play the traditional Rock, Paper, Scissors game against a computer. Users will have the option to play the traditional game with 3 choices or extend the game to the more difficult 5 choice game which has two further options of Lizard and Spock.
+This website is designed to allow users play the traditional Rock, Paper, Scissors game against a computer. Users will have the option to play the traditional game with 3 choices or extend the game to the more difficult 5 choice game which has two further options of Lizard and Spock.
 
 ![homepage](assets/images/game-responsive-design.jpg)
 
@@ -30,7 +30,7 @@ This website is deisgned to allow users play the traditional Rock, Paper, Scisso
 
 ## Objective
 
-For my second project, I intend to create a the traditional, well-known, Rock-Scissors-Paper game. There will also be an option to play a more challenging version of the game which includes the Lizard & Spock moves. The main objective is to demonstrate competency in HTML, CSS and JavaScript. Additionally, the project will demonstrate thorough testing as detailed in the Testing Section.
+For my second project, I intend to create the traditional, well-known, Rock-Scissors-Paper game. There will also be an option to play a more challenging version of the game which includes the Lizard & Spock moves. The main objective is to demonstrate competency in HTML, CSS and JavaScript. Additionally, the project will demonstrate thorough testing as detailed in the Testing Section.
 
 ## User Experience
 
@@ -38,11 +38,11 @@ For my second project, I intend to create a the traditional, well-known, Rock-Sc
 
 - Colour Scheme/Background
 
-    - There is a light gray used for the game area with a very slight opacity. The text color is black which provides good contrast to the light gray background. 
+    - There is a light grey used for the game area with a very slight opacity. The text color is black which provides good contrast to the light gray background. 
 
-- Typograpghy
+- Typography
 
-    - The Montserrat font is the main font used for the website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Montserrat is a clean font used frequently in programming, so it is both attractive and appropriate.
+    - The Montserrat font is the main font used for the website with Sans Serif as the fall-back font in case for any reason the font isn't being imported into the site correctly. Montserrat is a clean font used frequently in programming, so it is both attractive and appropriate.
 
 - Imagery
 
@@ -59,16 +59,16 @@ For my second project, I intend to create a the traditional, well-known, Rock-Sc
 ## Features
 
 - Homepage
-    - In order to start the game, the user is asked for their nameon the [homepage](assets/images/game-homepage.jpg). 
+    - In order to start the game, the user is asked for their name on the [homepage](assets/images/game-homepage.jpg). 
 - Instructions on how to play
-    - After entering their name, the user is asked whether they would like to [learn about the game or play now](assets/images/step2.jpg). If they would like instructions, they are firstly presented with those relating to the [standard game](assets/images/learn-more.jpg) and then those relating to the [difficult version](assets/images/learn-difficult.JPG)
+    - After inputting their name, the user is asked whether they would like to [learn about the game or play now](assets/images/step2.jpg). If they would like instructions, they are firstly presented with those relating to the [standard game](assets/images/learn-more.jpg) and then those relating to the [difficult version](assets/images/learn-difficult.JPG).
     
 - Playing the game
     - When the user selects 'Play Now', they are brought to a [game settings page](assets/images/game-settings-page.jpg), where they can choose the number of moves and then the level of difficulty.
-    - Once the users [chooses a move](assets/images/game-playing-area.jpg), the computer randomly chooses a moves and both moves are recorded on the scoreboard.
+    - Once the users [chooses a move](assets/images/game-playing-area.jpg), the computer randomly chooses a move and both moves are recorded on the scoreboard.
 
 - The Scoreboard
-    - There is a scoreboard that records the score of the game. When the game finsihes, the user is displayed with a [message](assets/images/game-over.jpg) indicating who won the game. 
+    - There is a scoreboard that records the score of the game. When the game finishes, the user is displayed with a [message](assets/images/game-over.jpg) indicating who won the game. 
 
 [Back to top](<#contents>)
 
@@ -76,7 +76,7 @@ For my second project, I intend to create a the traditional, well-known, Rock-Sc
 
 - Sound
 
-    - I would like to sound to the game to improve the user experience.
+    - I would like to add sound to the game to improve the user experience.
 
 - Delay
 
@@ -91,7 +91,7 @@ For my second project, I intend to create a the traditional, well-known, Rock-Sc
 
 - HTML
 - CSS
-- Javascript
+- JavaScript
 
 ### Frameworks, Libraries & Programs Used
 
@@ -117,13 +117,13 @@ For my second project, I intend to create a the traditional, well-known, Rock-Sc
     - No errors were found when passing through the official [W3C validator](https://validator.w3.org/#validate_by_input). Here is the result - [Homepage](assets/images/game-html-check.jpg). 
 
 - CSS
-    - No errors were found when passing through the offical [Jigsaw validator](https://jigsaw.w3.org/css-validator/validator). [Click here](assets/images/game-css-check.jpg) for results.
+    - No errors were found when passing through the official [Jigsaw validator](https://jigsaw.w3.org/css-validator/validator). [Click here](assets/images/game-css-check.jpg) for results.
 
 - JavaScript
     - No errors were found when passing through the [JSHint Validator](https://jshint.com/). [Click here](assets/images/game-java-check.jpg) 
 
 - Accessibility
-    - Confirmed that font choice was easy to read and accessible by running it through lighthouse in devtools. 
+    - Confirmed that font choice was easy to read and accessible by running it through lighthouse in devTools. 
 
  ![Lighthouse Report](assets/images/lighthouse-report-game.jpg)   
 
@@ -201,7 +201,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Personal Development
 
-- This project took three attempts. My first attempt (on a [separate repo](https://github.com/fergalquinn77/project2.git)) my my first solo Javascript project was an excercise in understanding JavaScript and how it fits in with the DOM. It had alot of changes and commit's so I felt it was best to start the project again with a [new repo](https://github.com/fergalquinn77/project2_t2.git). The new repo project had functionally worked fine but I felt it had a poor user experience - especially in [desktop view](assets/images/homepage-game.jpg). I should have given more thought to the layout and game-flow. The [previous wireframe](assets/images/wireframe-game.jpg).
+- This project took three attempts. My first attempt (on a [separate repo](https://github.com/fergalquinn77/project2.git)) was my first JavaScript project. It turned out to be learning experience with JavaScript and figuring out how it fits in with the DOM. It had a lot of changes and commit's so I felt it was best to start the project again with a [new repo](https://github.com/fergalquinn77/project2_t2.git). The new repo project/website functionally worked fine but I felt it had a poor user experience - especially in [desktop view](assets/images/homepage-game.jpg). I should have given more thought to the layout and game-flow. The [previous wireframe](assets/images/wireframe-game.jpg) didn't give enough thought to UX.
 
 - I felt it was best to relook at the website design. I redesigned the website using a more thought out [wireframe](<#wireframes>). The new design required much more work on Html/CSS which I feel paid off in many ways in the end. The website delivers a better UX and I learnt a huge amount about HTML/CSS areas I needed to improve my knowledge on, like positioning and display of elements. The tutors were a great help here.
 
